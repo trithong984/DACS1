@@ -1,0 +1,116 @@
+
+.login-header {
+    align-items: center;
+    justify-content: center;
+    background: url("../image/bg_breadcrumb.png");
+    background-position: center;
+    background-size: cover;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
+    text-align: center;
+    margin-top: -50px;
+    z-index: -1 ;
+}
+.login-header span{
+    color: #fff;
+    font-size: 16px;
+}
+.login-header .dau{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 15px;
+}
+.login-header a{
+    color: #339538;
+    font-size: 16px;
+    font-weight: 700;
+}
+.login-header h4{
+    font-weight: 800;
+    font-size: 26px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Mulish",sans-serif;
+    padding: 10px;
+}
+.body{
+    background-color: #f8f8f8;
+}
+.body2{
+    width: 30%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.body-small{
+    
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+.body-small p{
+    font-size: 26px;
+    font-weight: 400;
+}
+.tk{
+    padding-bottom: 15px;
+}
+.tk a{
+    color: #339538;
+}
+.tk a:hover{
+    color: #000;
+}
+.body-small input{
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    color: #333;
+    border-color: #ebebeb;
+    background: #ebebeb;
+    width: 100%;
+    border: initial;
+    font-weight: 400;
+}
+
+input:focus{
+    outline: none;
+}
+.password-body{
+    margin-bottom: 5px;
+}
+.body-small button{
+    color: #fff;
+    background: #339538;
+    font-size: 16px;
+    width: 100%;
+    height: 50px;
+    border: solid 1px #339538;
+}
+.body-small button:hover{
+    background: #fff;
+    color: #339538;
+    border: solid 1px #339538;
+}
+.body-small .quen a{
+    color: #333;
+}
+.body-small .quen,.body-small .dnb{
+    font-size: 14px;
+    color: #333;
+    margin: 15px 0;
+}
+.body-small .fb{
+    padding-top: 20px;
+}
+.body-small .fb, .body-small .gg{
+    padding-bottom: 15px;
+    width: 140px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+
+ 

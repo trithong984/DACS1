@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản</title>
+    <link rel="stylesheet" href="stylesignup.css">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="../reponsive.css">
+	<link rel="stylesheet" href="./reponsivesigup.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/shelline" rel="stylesheet">
+	<link rel="preload" as='style' type="text/css"
+		href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;900&display=swap">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="svn-artful-beauty.ttf">
+</head>
+<body>
+	<header class="header">
+		<div class="top_header">
+				<img class="lazyload" src="../image/imghead.png" />
+		</div>
+		<div class="middle-header">
+			<div class="container">
+				<div class="list_middle">
+					<div class="row">
+					<div class="col-xl-4 col-lg-4 col-12 search_header">
+						<input type="text" class="search-auto" placeholder="Tìm sản phẩm">
+						<button class="btn" type="submit"></button>
+						<span class="search_logo"><i class="fa-solid fa-magnifying-glass"></i></span>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-12 logo_header">
+						<a href="../index.html">
+							<img src="../image/logo_header.png">
+						</a>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-12 header_right">
+						<div class="col-4 nav_hidden">
+						<input type="checkbox" class='nav__input' name="" id="nav__input">		
+						<label for="nav__input" class="nav__bar-btn">
+							<img id="menubar1" src="https://bizweb.dktcdn.net/100/316/047/themes/894743/assets/menu-bar-2.png?1676255300327">
+                        </label>			
+                        <nav  class="nav__mobile">
+                          <ul class="nav__mobile-list">
+                            <li><a href="../index.html" class="nav__mobile-link active">Trang chủ</a></li>
+                            <li><a href="#gioithieu" class="nav__mobile-link">Giới thiệu</a></li>
+                            <li><a href="#sanpham" class="nav__mobile-link">Sản phẩm</a></li>
+                            <li><a href="#tintuc" class="nav__mobile-link">Tin tức</a></li>
+                            <li><a href="#lienhe" class="nav__mobile-link">Liên hệ</a></li>
+                          </ul>
+                          <label for="nav__input" class="nav__mobile-btn">
+                            <img id="menubar1" src="https://bizweb.dktcdn.net/100/316/047/themes/894743/assets/menu-bar-2.png?1676255300327">
+                          </label>
+                        </nav>
+					</div>
+						<div class="col-4 logo_hidden">
+							<a href="#">
+								<img src="../image/logo_header.png">
+							</a>
+						</div>
+						<div class="col-xl-12 col-lg-12 col-4 group-accoutfirst">
+							<ul class="group-accout">
+								<li class="phone-head">
+									<span class="icon-phone-header"> <i class="fa fa-phone"></i></span>
+									<div class="content_s">
+										<p class=bold_>Hỗ trợ</p>
+										<a class="fone">1900 6750</a>
+									</div>
+								</li>
+								<li class="user">
+									<span  class="icon_"><i class="fa-regular fa-user"></i></span>
+									<div class="drop-account">
+										<a href="../login/login.html">Đăng nhập</a>
+										<a href="../signup/signup.html">Đăng ký</a>
+									</div>
+								
+								</li>
+								<li class="cart-header">
+									<span class="icon_">
+										<i id="cart" class="fa-solid fa-cart-shopping"></i>
+										<span class ="cart-quantity">0</span></span>
+									</li>
+							</ul>
+						</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="site-nav">
+			<nav id="header-nav" class="header-nav">
+				<ul class="item_big">
+					<li class="nav-item active ">
+						<a class="a-img active" href="#">
+							Trang chủ
+						</a>
+					</li>
+					<li class="nav-item ">
+						<a class="a-img" href="#gioithieu">
+							Giới thiệu
+						</a>
+					</li>
+					<li class="nav-item  ">
+						<a class="a-img" href="#sanpham">
+							Sản phẩm
+						</a>
+					</li>
+					<li class="nav-item ">
+						<a class="a-img" href="#baoquan">
+							Bảo quản
+						</a>
+					</li>
+					<li class="nav-item ">
+						<a class="a-img" href="#tintuc">
+							Tin tức
+						</a>
+					</li>
+					<li class="nav-item ">
+						<a class="a-img" href="#lienhe">
+							Liên hệ
+						</a>
+					</li>
+			</nav>
+		</div>
+		<div class="login-header">
+			<span class="trangchu">Trang chủ</span>
+			<span class="dau"><i class="fa-solid fa-angle-right"></i></span>
+			<span><a href="">Đăng ký tài khoản</a></span>
+			<h4>Đăng ký tài khoản</h4>
+		</div>
+		
+	</header>
+	<div class="body">
+		<div class="body2">
+			<div class="body-small">
+				<p>Đăng ký</p>
+			<div class="tk">Đã có tài khoản,<a href="../login/login.html"> đăng nhập tại đây</a></div>
+			<div class="mid-body">
+				<div  class="firstname">				
+					<input class="input-signup-firstname" type="input" placeholder="Họ" ></div>
+				<div class="lastname"><input  class="input-signup-lastname" type="input" placeholder="Tên"></div>
+				<div  class="email-body"><input class="input-signup-username" type="email" placeholder="Email" ></div>
+				<div  class="sdt-body"><input class="input-signup-sdt" type="input" placeholder="Số điện thoại"></div>
+				<div  class="password-body"><input class="input-signup-password" type="password" placeholder="Mật khẩu"></div>
+			</div>
+			<button type="submit" class="signup__signInButton" class="btn btn-primary">Đăng ký</button>
+			<span class="dnb">Hoặc đăng nhập bằng</span>
+			<div class="fb"><a href=""><img src="../image/fb.png" alt=""></a></div>
+			<div class="gg"><a href=""><img src="../image/gg.png" alt=""></a></div>
+			</div>
+		</div>
+		<script>
+			function validatePhoneNumber(phoneNumber) {
+		var phoneRegex = /^\d{10}$/;
+		return phoneNumber.match(phoneRegex);
+	  }
+	  
+	  function validatePassword(password) {
+		return password.length >= 6 && password.length <= 50;
+	  }
+	  
+	  function validateEmail(email) {
+		var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+		return email.match(emailRegex);
+	  }
+	  
+		  </script>
+			  <script>
+				  // validation form register and register user local storage
+			  const inputfirstnameRegister = document.querySelector(".input-signup-firstname");
+			  const inputlastnameRegister = document.querySelector(".input-signup-lastname");
+			  const inputUsernameRegister = document.querySelector(".input-signup-username");
+			  const inputsdtRegister = document.querySelector(".input-signup-sdt");
+			  const inputPasswordRegister = document.querySelector(".input-signup-password");
+			  
+			  const btnRegister = document.querySelector(".signup__signInButton");
+			  
+			  // validation form register and register user local storage
+			  
+			  btnRegister.addEventListener("click", (e) => {
+				e.preventDefault();
+				
+		if (
+		  inputUsernameRegister.value === "" ||
+		  inputPasswordRegister.value === "" ||
+		  inputsdtRegister.value === "" ||
+		  inputlastnameRegister.value === "" ||
+		  inputfirstnameRegister.value === ""
+		) {
+		  alert("Vui lòng không để trống");
+		} else if (!validatePhoneNumber(inputsdtRegister.value)) {
+		  alert("Số điện thoại không hợp lệ (yêu cầu 10 chữ số)");
+		} else if (!validatePassword(inputPasswordRegister.value)) {
+		  alert("Mật khẩu không hợp lệ (yêu cầu từ 6 đến 50 ký tự)");
+		} else if (!validateEmail(inputUsernameRegister.value)) {
+		  alert("Địa chỉ email không hợp lệ");
+		} else {
+				  // array user
+				  const user = {
+					username: inputUsernameRegister.value,
+					password: inputPasswordRegister.value,
+					sdt: inputsdtRegister.value,
+					lastname: inputlastnameRegister.value,
+					firstname: inputfirstnameRegister.value,
+					
+				  };
+				  let json = JSON.stringify(user);
+				  localStorage.setItem(inputUsernameRegister.value, json);
+				  alert("Đăng Ký Thành Công");
+			window.location.href = "../login/login.html";
+		  }
+		});
+		  </script>
+	</div>  
+	<div class="footer">
+		<div class="top-footer">
+			<div class="service">
+				<div class="left-service">
+					<div class="title-service"> Hỗ trợ 24/7</div>
+					<div class="sumary-service">Liên hệ chúng tôi 24h</div>
+				</div>
+				<div class="right-service">
+					<span><i class="fa-solid fa-headphones"></i></span>
+				</div>
+			</div>
+			<div class="service s2">
+				<div class="left-service">
+					<div class="title-service"> Thanh toán</div>
+					<div class="sumary-service">Bảo mật thanh toán</div>
+				</div>
+				<div class="right-service">
+					<span><i class="fa-solid fa-shop"></i></span>
+				</div>
+			</div>
+			<div class="service s3">
+				<div class="left-service">
+					<div class="title-service"> Giao hàng</div>
+					<div class="sumary-service">Giao hàng tận nhà</div>
+				</div>
+				<div class="right-service">
+					<span><i class="fa-solid fa-truck"></i></span>
+				</div>
+			</div>
+		</div>
+		<div class="bot-footer">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="top-logo">
+						<a href=""> <img src="./image/logo_header.png" alt=""></a>
+					</div>
+					<div class="mid-logo"><p>Cửa hàng <b>Nông sản sạch</b> là một website cũng cấp thực phẩm an toàn, nông sản sạch cho người dân.
+					</p>
+				</div>
+				<div class="bot-logo"></div>
+					<div class="content-logo">
+						<span class="left-logo">
+							<i class="fas fa-map-marker-alt"></i>
+						</span>
+						<span class="right-logo">
+							Trường Đại học Công nghệ Thông tin và Truyền thông Việt Hàn
+						</span>
+					</div>
+					<div class="phone-logo">
+						<span class="left-logo">
+							<i class="fa-brands fa-whatsapp"></i>
+						</span>
+						<span class="right-logo">
+							<a href="">1900 6750</a>
+						</span>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<div class="row">
+						<div class="chungtoi col-lg-6 col-md-6 col-xs-12">
+							<h5 class="title-menu">
+								Về chúng tôi
+							</h5>
+							<div class="content-menu row">
+								<div class="col-lg-6 col-md-12">
+									<ul class="list-menu">
+										<li class="li-menu"><a href="">Trang chủ</a></li>
+										<li class="li-menu"><a href="">Giới thiệu</a></li>
+										<li class="li-menu"><a href="">Sản phẩm</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-6 col-md-12">
+									<ul class="list-menu">
+										<li class="li-menu"><a href="">Đặt hàng</a></li>
+										<li class="li-menu"><a href="">Tin tức</a></li>
+										<li class="li-menu"><a href="">Liên hệ</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="email ">
+								<div class="left-email">
+									<span><i class="fa-regular fa-envelope"></i></span>
+									
+								</div>
+								<div class="right-gmail">
+									<div class="title-gmail"> Đăng ký</div>
+									<div class="sumary-gmail">Nhận thông tin khuyến mãi</div>
+								</div>
+							</div>
+						</div>
+						<div class="khachhang col-lg-6 col-md-6 col-xs-12">
+							<h5 class="title-menu">
+								Hỗ trợ khách hàng
+							</h5>
+							<div class="content-menu row">
+								<div class="col-6">
+									<ul class="list-menu">
+										<li class="li-menu"><a href="">Trang chủ</a></li>
+										<li class="li-menu"><a href="">Giới thiệu</a></li>
+										<li class="li-menu"><a href="">Sản phẩm</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="email-form">
+								<input class="input-form" type="text" placeholder="EMAIL">
+								<button class="bt-form"> Đăng ký</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="end">Nguồn cung cấp Thông và Quang</div>
+	</div>
+	<div id="back-top">
+		<a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+	</div>
+</body>
+<script src="../script.js"></script>
+</html>

@@ -1,0 +1,4097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nhà của Thông</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="reponsive.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/shelline" rel="stylesheet">
+	<link rel="preload" as='style' type="text/css"
+		href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;900&display=swap">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="svn-artful-beauty.ttf">
+</head>
+<body>
+	<div class="cart-modal-overlay">
+        <div class="cart-modal">
+          <i id="close-btn" class="fas fa-times"></i>
+            <div class="product-rows">
+            </div>
+            <div class="total">
+              <h6 class="cart-total">Tổng tiền</h6>
+                <span class="total-price">0đ</span>
+                  <button class="purchase-btn">Thanh toán</button>
+            </div>
+          </div>
+    </div>
+	<header class="header">
+		<div class="top_header">
+			<a href="#">
+				<img class="product-image" src="./image/imghead.png" />
+			</a>
+		</div>
+		<div class="middle-header">
+			<div class="container">
+				<div class="list_middle">
+					<div class="row">
+					<div class="col-xl-4 col-lg-4 col-12 search_header">
+						<input type="text" class="search-auto" placeholder="Tìm sản phẩm">
+						<button class="btn" type="submit"></button>
+						<span class="search_logo"><i class="fa-solid fa-magnifying-glass"></i></span>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-12 logo_header">
+						<a href="#">
+							<img src="./image/logo_header.png">
+						</a>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-12 header_right">
+						<div class="col-4 nav_hidden">
+						<input type="checkbox" class='nav__input' name="" id="nav__input">		
+						<label for="nav__input" class="nav__bar-btn">
+							<img id="menubar1" src="https://bizweb.dktcdn.net/100/316/047/themes/894743/assets/menu-bar-2.png?1676255300327">
+                        </label>			
+                        <nav  class="nav__mobile">
+                          <ul class="nav__mobile-list">
+                            <li><a href="" class="nav__mobile-link active">Trang chủ</a></li>
+                            <li><a href="#gioithieu" class="nav__mobile-link">Giới thiệu</a></li>
+                            <li><a href="#sanpham" class="nav__mobile-link">Sản phẩm</a></li>
+                            <li><a href="#tintuc" class="nav__mobile-link">Tin tức</a></li>
+                            <li><a href="#lienhe" class="nav__mobile-link">Liên hệ</a></li>
+                          </ul>
+                          <label for="nav__input" class="nav__mobile-btn">
+                            <img id="menubar1" src="https://bizweb.dktcdn.net/100/316/047/themes/894743/assets/menu-bar-2.png?1676255300327">
+                          </label>
+                        </nav>
+					</div>
+						<div class="col-4 logo_hidden">
+							<a href="#">
+								<img src="./image/logo_header.png">
+							</a>
+						</div>
+						<div class="col-xl-12 col-lg-12 col-4 group-accoutfirst">
+							<ul class="group-accout">
+								<li class="phone-head">
+									<span class="icon-phone-header"> <i class="fa fa-phone"></i></span>
+									<div class="content_s">
+										<p class=bold_>Hỗ trợ</p>
+										<a class="fone">1900 6750</a>
+									</div>
+								</li>
+								<li class="user">
+									<span  class="icon_"><i class="fa-regular fa-user"></i></span>
+									<div class="drop-account">
+										<a href="./login/login.html">Đăng nhập</a>
+										<a href="./signup/signup.html" class="border_login">Đăng ký</a>
+									</div>
+								
+								</li>
+								<li class="cart-header">
+									<span class="icon_">
+										<i id="cart" class="fa-solid fa-cart-shopping"></i>
+										<span class ="cart-quantity">0</span></span>
+									</li>
+							</ul>
+						</div>
+				
+				</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="site-nav">
+			<nav id="header-nav" class="header-nav">
+				<ul class="item_big">
+					<li class="nav-item active ">
+						<a class="a-img active" href="#">
+							Trang chủ
+						</a>
+					</li>
+					<li class="nav-item ">
+						<a class="a-img" href="#gioithieu">
+							Giới thiệu
+						</a>
+					</li>
+					<li class="nav-item  ">
+						<a class="a-img" href="#sanpham">
+							Sản phẩm
+						</a>
+					</li>
+					<li class="nav-item ">
+						<a class="a-img" href="#baoquan">
+							Bảo quản
+						</a>
+					</li>
+					<li class="nav-item ">
+						<a class="a-img" href="#tintuc">
+							Tin tức
+						</a>
+					</li>
+					<li class="nav-item ">
+						<a class="a-img" href="#lienhe">
+							Liên hệ
+						</a>
+					</li>
+			</nav>
+		</div>
+		<div class="home" id="home">
+			<span class="title-header">
+				<h1>Thực Phẩm Sạch </h1>
+				<h2> đến từ nhà của Thông </h2>
+			</span>
+		</div>
+		<section class="section_category">
+			<div class="container">
+				<div class="cate-list row">
+					<div class="col-xl-2 col-lg-2 col-4">
+						<div class="swiper-slide">
+							<div class="cate-item">
+								<a class="image" href="/muop">
+									<img class="image_cate_thumb product-image" src="./image/cuqua.png" />
+								</a>
+								<div class="hiden">
+									<span class="count_sp">
+										6
+									</span>
+									<span>Sản phẩm</span>
+								</div>
+							</div>
+							<h4 class="title_cate_"><a href="#">Củ quả</a></h4>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-2 col-4">
+						<div class="swiper-slide">
+							<div class="cate-item">
+								<a class="image" href="#">
+
+									<img class="image_cate_thumb product-image" src="./image/rau.png" alt="Đu đủ" />
+								</a>
+								<div class="hiden">
+
+									<span class="count_sp">
+										3
+									</span>
+
+									<span>Sản phẩm</span>
+								</div>
+							</div>
+							<h4 class="title_cate_"><a href="#">Rau</a></h4>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-2 col-4">
+						<div class="swiper-slide">
+							<div class="cate-item">
+								<a class="image" href="#">
+
+									<img class="image_cate_thumb product-image" src="./image/thitlon.png"
+										alt="Bông cải xanh" />
+								</a>
+								<div class="hiden">
+
+									<span class="count_sp">
+										5
+									</span>
+
+									<span>Sản phẩm</span>
+								</div>
+							</div>
+							<h4 class="title_cate_"><a href="#">Thực phẩm</a>
+							</h4>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-2 col-4">
+						<div class="swiper-slide">
+							<div class="cate-item">
+								<a class="image" href="#">
+
+									<img class="image_cate_thumb product-image" src="./image/duahau.png" alt="Cà chua" />
+								</a>
+								<div class="hiden">
+
+									<span class="count_sp">
+										8
+									</span>
+
+									<span>Sản phẩm</span>
+								</div>
+							</div>
+							<h4 class="title_cate_"><a href="#">Trái cây</a></h4>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-2 col-4">
+						<div class="swiper-slide">
+							<div class="cate-item">
+								<a class="image" href="#">
+
+									<img class="image_cate_thumb product-image" src="./image/hatoccho.png" alt="Măng tây" />
+								</a>
+								<div class="hiden">
+
+									<span class="count_sp">
+										4
+									</span>
+									<span>Sản phẩm</span>
+								</div>
+							</div>
+							<h4 class="title_cate_"><a href="#">Các loại hạt</a></h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</header>
+	<section id="gioithieu" class="section_intro">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-6 col-lg-6 col-12 col-intro-1">
+					<div class="banner_intro">
+						<a href="#">
+							<img src="./image/intromain.png" />
+						</a>
+					</div>
+				</div>
+				<div class="col-xl-6 col-lg-6 col-12">
+					<div class="intro_right">
+						<div class="content_intro_right">
+							<h3>
+								<span>Chúng tôi cung cấp</span>
+							</h3>
+							<h2>
+								<span>Các thực phẩm tươi - sạch</span>
+							</h2>
+							<div class="contentpage">
+								Cửa hàng <b class="color_main">thực phẩm sạch</b> là một website cung cấp thực phẩm an
+								toàn, nông
+								sản sạch cho người dân. Với mong muốn mang tới mọi gia đình những thực phẩm an toàn nhất
+								trước
+								mối lo ngại về thực phẩm bẩn tại Việt Nam.<br>
+								Với mục đích là "<b>Mang thiên nhiên về với căn nhà của bạn</b>"
+							</div>
+						</div>
+						<div class="img_intro_list">
+							<div class="intro1">
+								<a href="#" title="Ảnh 1">
+									<img width="186" height="173" src="./image/intro1.png" class="img-responsive" />
+								</a>
+							</div>
+							<div class="intro1">
+								<a href="#" title="Ảnh 2">
+									<img width="186" height="173" src="./image/intro2.png" class="img-responsive" />
+								</a>
+							</div>
+							<div class="intro1">
+								<a href="#" title="Ảnh 3">
+									<img width="186" height="173" src="./image/intro3.png" class="img-responsive" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="notification-container">
+		<div class="notification">
+			<p class="notification-message"></p>
+		</div>
+		<div class="removed-notification">
+			<p class="removed-message"></p>
+		</div>
+	</div>
+	<section id="sanpham" class="section_tab_product">
+		<div class="bg_module">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12 col-12">
+						<div class="title_modules">
+							<h2 class="title_tab">
+								<span>SẢN PHẨM</span>
+							</h2>
+							<ul class="nav-tab">
+								<li class="tabtitle1 current" onclick="changeProductList('noibat',this)">
+									Nổi bật
+								</li>
+								<li class="tabtitle1" onclick="changeProductList('traicay',this)">
+									Trái cây
+								</li>
+								<li class="tabtitle1" onclick="changeProductList('cuqua',this)">
+									Củ quả
+								</li>
+								<li class="tabtitle1" onclick="changeProductList('rau',this)">
+									Rau
+								</li>
+								<li class="tabtitle1" onclick="changeProductList('hat',this)">
+									Hạt
+								</li>
+								<li class="tabtitle1" onclick="changeProductList('thucpham',this)">
+									Thực phẩm
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="noibat" class="row">
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="chuoinammy">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/chuoinammy.png">
+								</a>
+								<span class="smart">
+									<span>-26%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Chuối Nam Mỹ</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+												120.000₫<span class="kg">/kg</span></span>
+												<span class="compare-price">150.000₫/kg</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('chuoinammy')" class="xem_nhanh btn-circle btn_view btn">
+									<i class="fa-solid fa-eye"></i>
+								</a> 
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<button class="add-to-cart">Add to cart</button>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="taomy">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/taomy.png">
+								</a>
+								<span class="smart">
+									<span>-14%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Táo Mỹ</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											86.000₫<span class="kg">/kg</span></span>
+											<span class="compare-price">100.000₫/kg</span>
+								     </div>
+									</div>
+								</div>
+						
+							<div class="product-action">
+								<a onclick="openForm('taomy')" class="xem_nhanh btn-circle btn_view btn ">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<button class="add-to-cart">Add to cart</button>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="cachuabi">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/cachuabi.png">
+								</a>
+								<span class="smart">
+									<span>-10%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Cà chua bi</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											45.000₫<span class="kg">/kg</span></span>
+											<span class="compare-price">50.000₫/kg</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('cachuabi')" class="xem_nhanh btn-circle btn_view btn ">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="raucanhxanh">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/raucaixanh.png">
+								</a>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Rau cải bẹ xanh non</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											25.000₫<span class="kg">/kg</span></span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('raucaixanh')" class="xem_nhanh btn-circle btn_view btn ">
+									<i class="fa-solid fa-eye" onclick="openForm('formD')"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="thitlon">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/thitlon.png">
+								</a>
+								<span class="smart">
+									<span>-25%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Thịt lợn nạt vai</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											105.000₫<span class="kg">/kg</span></span>
+											<span class="compare-price">140.000₫/kg</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('thitlon')" class="xem_nhanh btn-circle btn_view btn ">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="suplotrang">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/suplotrang.png">
+								</a>
+								<span class="smart">
+									<span>-10%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Súp lơ trắng</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											27.000₫<span class="kg">/kg</span></span>
+											<span class="compare-price">30.000₫/kg</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('suplotrang')" class="xem_nhanh btn-circle btn_view btn ">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="namrom">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/namromsach.png">
+								</a>
+								<span class="smart">
+									<span>-10%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Nấm rơm sạch</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											162.000₫<span class="kg">/kg</span></span>
+											<span class="compare-price">180.000₫/kg</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('namrom')" class="xem_nhanh btn-circle btn_view btn ">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="duachuothailan">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/duachuotthailan.png">
+								</a>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Dưa chuột Thái Lan</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											15.000₫<span class="kg">/kg</span></span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('duachuotthailan')" class="xem_nhanh btn-circle btn_view btn ">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+				</div>
+				<div id="cuqua" class="row">
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="namrom">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/namromsach.png">
+								</a>
+								<span class="smart">
+									<span>-10%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Nấm rơm sạch</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											162.000₫<span class="kg">/kg</span></span>
+											<span class="compare-price">180.000₫/kg</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('namrom')" class="xem_nhanh btn-circle btn_view btn ">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="duachuotthailanh">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/duachuotthailan.png">
+								</a>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Dưa chuột Thái Lan</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											15.000₫<span class="kg">/kg</span></span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('duachuotthailan')" class="xem_nhanh btn-circle btn_view btn ">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="chanhxanh">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/chanh.png">
+								</a>
+								<span class="smart">
+									<span>-8%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Chanh xanh</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											23.000₫<span class="kg">/kg</span></span>
+											<span class="compare-price">25.000₫/kg</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('chanhxanh')" class="xem_nhanh btn-circle btn_view btn ">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="hanhtaydo">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/hanhtay.png">
+								</a>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Hành tây đỏ</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											20.000₫<span class="kg">/kg</span></span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('hanhtaydo')" class="xem_nhanh btn-circle btn_view btn ">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="cachuabi">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/cachuabi.png">
+								</a>
+								<span class="smart">
+									<span>-10%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Cà chua bi</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											45.000₫<span class="kg">/kg</span></span>
+											<span class="compare-price">50.000₫/kg</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('cachuabi')" class="xem_nhanh btn-circle btn_view btn ">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+				</div>
+				<div id="rau" class="row">
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="suplotrang">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/suplotrang.png">
+								</a>
+								<span class="smart">
+									<span>-10%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Súp lơ trắng</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											27.000₫<span class="kg">/kg</span></span>
+											<span class="compare-price">30.000₫/kg</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('suplotrang')" class="xem_nhanh btn-circle btn_view btn ">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="raucaixanh">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/raucaixanh.png">
+								</a>
+								<span class="smart">
+									<span>-15%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Rau cải bẹ xanh non</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											25.000₫<span class="kg">/kg</span></span>
+											<span class="compare-price">30.000₫/kg</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('raucaixanh')" class="xem_nhanh btn-circle btn_view btn ">
+									<i class="fa-solid fa-eye" onclick="openForm('formD')"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="xalach">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/xalach.png">
+								</a>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Xà lách</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											35.000₫<span class="kg">/kg</span></span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('xalachRomaine')" class="xem_nhanh btn-circle btn_view btn ">
+									<i class="fa-solid fa-eye" onclick="openForm('formD')"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+				</div>
+				<div id="thucpham" class="row">
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="thitlon">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/thitlon.png">
+								</a>
+								<span class="smart">
+									<span>-25%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Thịt lợn nạt vai</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											105.000₫<span class="kg">/kg</span></span>
+											<span class="compare-price">140.000₫/kg</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('thitlon')" class="xem_nhanh btn-circle btn_view btn ">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="tombien">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/tombien.png">
+								</a>
+								<span class="smart">
+									<span>-35%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Tôm sú</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											234.000₫<span class="kg">/kg</span></span>
+											<span class="compare-price">360.000₫/kg</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('tombien')" class="xem_nhanh btn-circle btn_view btn ">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="cahoi">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/cahoi.png">
+								</a>
+								<span class="smart">
+									<span>-30%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Cá hồi</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											539.000₫<span class="kg">/kg</span></span>
+											<span class="compare-price">770.000₫/kg</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('cahoi')" class="xem_nhanh btn-circle btn_view btn ">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="cuabe">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/cuabe.png">
+								</a>
+								<span class="smart">
+									<span>-50%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Cua bể</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											290.000₫<span class="kg">/kg</span></span>
+											<span class="compare-price">580.000₫/kg</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('cuabe')" class="xem_nhanh btn-circle btn_view btn ">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="mucthanhhoa">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/muathanhhoa.png">
+								</a>
+								<span class="smart">
+									<span>-35%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Mực Thanh Hoá</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											388.000₫<span class="kg">/kg</span></span>
+											<span class="compare-price">290.000₫/kg</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('mucthanhhoa')" class="xem_nhanh btn-circle btn_view btn ">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="thitbo">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/thitbo.png">
+								</a>
+								<span class="smart">
+									<span>-25%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Thịt bò Úc</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											435.000₫<span class="kg">/kg</span></span>
+											<span class="compare-price">580.000₫/kg</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('thitbouc')" class="xem_nhanh btn-circle btn_view btn ">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+				</div>
+				<div id="hat" class="row">
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="hatoccho">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/hatoccho.png">
+								</a>
+								<span class="smart">
+									<span>-20%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Hạt óc chó</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											240.000₫<span class="kg">/kg</span></span>
+											<span class="compare-price">300.000₫/kg</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('hatoccho')" class="xem_nhanh btn-circle btn_view btn">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="hatdieukho">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/hatdieukho.png">
+								</a>
+								<span class="smart">
+									<span>-30%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Hạt điều khô</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											245.000₫<span class="kg">/kg</span></span>
+											<span class="compare-price">350.000₫/kg</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('hatdieukho')" class="xem_nhanh btn-circle btn_view btn">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="hatdauxanh">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/dauxanh.png">
+								</a>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Hạt đậu xanh</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											25.000₫<span class="kg">/kg</span></span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('hatdauxanh')" class="xem_nhanh btn-circle btn_view btn">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="hathanhnhan">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/hathanhnhan.png">
+								</a>
+								<span class="smart">
+									<span>-45%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Hạt hạnh nhân</a></h3>
+									<div class="blockprice">
+										<span class="price-box">
+											286.000₫<span class="kg">/kg</span></span>
+											<span class="compare-price">520.000₫/kg</span>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('hathanhnhan')" class="xem_nhanh btn-circle btn_view btn">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="hatdieutrang">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/hatdieutrang.png">
+								</a>
+								<span class="smart">
+									<span>-20%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Hạt điều trắng</a></h3>
+									<div class="blockprice">
+										<div class="price-box">
+											460.000₫ <span class="kg">/kg</span>
+											<span class="compare-price">500.000₫/kg</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('hatdieutrang')" class="xem_nhanh btn-circle btn_view btn">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+				</div>
+				<div id="traicay" class="row">
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="chuoinammy">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/chuoinammy.png">
+								</a>
+								<span class="smart">
+									<span>-26%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Chuối Nam Mỹ</a></h3>
+									<div class="blockprice">
+										<div class="price-box">
+											25.000₫ <span class="kg">/kg</span>
+											<span class="compare-price">34.000₫/kg</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('chuoinammy')" class="xem_nhanh btn-circle btn_view btn">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="taomy">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/taomy.png">
+								</a>
+								<span class="smart">
+									<span>-14%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Táo Mỹ</a></h3>
+									<div class="blockprice">
+										<div class="price-box">
+											86.000₫ <span class="kg">/kg</span>
+											<span class="compare-price">100.000₫/kg</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('taomy')" class="xem_nhanh btn-circle btn_view btn ">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="thanhlong">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/thanhlong.png">
+								</a>
+								<span class="smart">
+									<span>-20%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Thanh long</a></h3>
+									<div class="blockprice">
+										<div class="price-box">
+											12.000₫ <span class="kg">/kg</span>
+											<span class="compare-price">15.000₫/kg</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('thanhlong')" class="xem_nhanh btn-circle btn_view btn">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="taoxanh">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/taoxanh.png">
+								</a>
+								<span class="smart">
+									<span>-10%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Táo xanh pháp</a></h3>
+									<div class="blockprice">
+										<div class="price-box">
+											81.000₫ <span class="kg">/kg</span>
+											<span class="compare-price">90.000₫/kg</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('taoxanh')" class="xem_nhanh btn-circle btn_view btn">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="luudo">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/luudo.png">
+								</a>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Lựu đỏ</a></h3>
+									<div class="blockprice">
+										<div class="price-box">
+											295.000₫ <span class="kg">/kg</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('luudo')" class="xem_nhanh btn-circle btn_view btn">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="nhotim">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/nhotim.png">
+								</a>
+								<span class="smart">
+									<span>-14%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Nho tím</a></h3>
+									<div class="blockprice">
+										<div class="price-box">
+											215.000₫
+											<span class="compare-price">250.000₫</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('nhotim')" class="xem_nhanh btn-circle btn_view btn">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="duahau">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/duahau.png">
+								</a>
+								<span class="smart">
+									<span>-20%
+									</span>
+								</span>
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Dưa hấu Miền Nam</a></h3>
+									<div class="blockprice">
+										<div class="price-box">
+											12.000₫ <span class="kg">/kg</span>
+											<span class="compare-price">15.000₫/kg</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-action">
+								<a onclick="openForm('duahau')" class="xem_nhanh btn-circle btn_view btn">
+									<i class="fa-solid fa-eye"></i>
+								</a>
+								<a class="btn btn_view action favorite-button">
+									<i class="fa-regular fa-heart"></i>
+								</a>
+							</div>
+							<div class="add-to-cart">Add to cart</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-sm-6" title="camthai">
+						<div class="product-box product-block-item">
+							<div class="product-thumbnail">
+								<a class="image_thumb product-transition" href="#">
+									<img class="product-image" src="./image/camthai.png">
+								</a>
+
+							</div>
+							<div class="product-info">
+								<div class="product-content">
+									<h3 class="product-name"><a href="#">Cam Thái</a></h3>
+									<div class="blockprice">
+										<div class="price-box">
+											80.000₫ <span class="kg">/kg</span>
+										</div>
+									</div>
+								</div>
+								<div class="product-action">
+									<a onclick="openForm('camthai')" class="xem_nhanh btn-circle btn_view btn">
+										<i class="fa-solid fa-eye"></i>
+									</a>
+									<a class="btn-cart firstb button_35 left-to tuychon" href="#">
+										<i class="fa-solid fa-cart-shopping"></i>
+									</a>
+									<a href="javascript:void(0)" class="btn btn_view action favorite-button">
+										<i class="fa-regular fa-heart"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="hat" class="row">
+						<div class="col-xl-3 col-lg-4 col-sm-6" title="hatoccho">
+							<div class="product-box product-block-item">
+								<div class="product-thumbnail">
+									<a class="image_thumb product-transition" href="#">
+										<img class="product-image" src="./image/hatoccho.png">
+									</a>
+									<span class="smart">
+										<span>-10%
+										</span>
+									</span>
+								</div>
+								<div class="product-info">
+									<div class="product-content">
+										<h3 class="product-name"><a href="#">Hạt óc chó</a></h3>
+										<div class="blockprice">
+											<div class="price-box">
+												315.000₫ <span class="kg">/kg</span>
+												<span class="compare-price">350.000₫/kg</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product-action">
+									<a onclick="openForm('hatdieukho')" class="xem_nhanh btn-circle btn_view btn">
+										<i class="fa-solid fa-eye"></i>
+									</a>
+									<a class="btn-cart firstb button_35 left-to tuychon" href="#">
+										<i class="fa-solid fa-cart-shopping"></i>
+									</a>
+									<a href="javascript:void(0)" class="btn btn_view action favorite-button">
+										<i class="fa-regular fa-heart"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-4 col-sm-6" title="hatdieukho">
+							<div class="product-box product-block-item">
+								<div class="product-thumbnail">
+									<a class="image_thumb product-transition" href="#">
+										<img class="product-image" src="./image/hatdieukho.png">
+									</a>
+									<span class="smart">
+										<span>-14%
+										</span>
+									</span>
+								</div>
+								<div class="product-info">
+									<div class="product-content">
+										<h3 class="product-name"><a href="#">Hạt điều khô</a></h3>
+										<div class="blockprice">
+											<div class="price-box">
+												301.000₫ <span class="kg">/kg</span>
+												<span class="compare-price">350.000₫/kg</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product-action">
+									<a onclick="openForm('hatdieukho')" class="xem_nhanh btn-circle btn_view btn">
+										<i class="fa-solid fa-eye"></i>
+									</a>
+									<a class="btn-cart firstb button_35 left-to tuychon" href="#">
+										<i class="fa-solid fa-cart-shopping"></i>
+									</a>
+									<a href="javascript:void(0)" class="btn btn_view action favorite-button">
+										<i class="fa-regular fa-heart"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-4 col-sm-6" title="hatdauxanh">
+							<div class="product-box product-block-item">
+								<div class="product-thumbnail">
+									<a class="image_thumb product-transition" href="#">
+										<img class="product-image" src="./image/dauxanh.png">
+									</a>
+								</div>
+								<div class="product-info">
+									<div class="product-content">
+										<h3 class="product-name"><a href="#">Hạt đậu xanh</a></h3>
+										<div class="blockprice">
+											<div class="price-box">
+												25.000₫ <span class="kg">/kg</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product-action">
+									<a onclick="openForm('hatdauxanh')" class="xem_nhanh btn-circle btn_view btn">
+										<i class="fa-solid fa-eye"></i>
+									</a>
+									<a class="btn-cart firstb button_35 left-to tuychon" href="#">
+										<i class="fa-solid fa-cart-shopping"></i>
+									</a>
+									<a href="javascript:void(0)" class="btn btn_view action favorite-button">
+										<i class="fa-regular fa-heart"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-4 col-sm-6" title="hathanhnhan">
+							<div class="product-box product-block-item">
+								<div class="product-thumbnail">
+									<a class="image_thumb product-transition" href="#">
+										<img class="product-image" src="./image/hathanhnhan.png">
+									</a>
+									<span class="smart">
+										<span>-13%
+										</span>
+									</span>
+								</div>
+								<div class="product-info">
+									<div class="product-content">
+										<h3 class="product-name"><a href="#">Hạt hạnh nhân</a></h3>
+										<div class="blockprice">
+											<div class="price-box">
+												452.400₫
+												<span class="compare-price">520.000₫</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product-action">
+									<a onclick="openForm('hathanhnhan')" class="xem_nhanh btn-circle btn_view btn">
+										<i class="fa-solid fa-eye"></i>
+									</a>
+									<a class="btn-cart firstb button_35 left-to tuychon" href="#">
+										<i class="fa-solid fa-cart-shopping"></i>
+									</a>
+									<a href="javascript:void(0)" class="btn btn_view action favorite-button">
+										<i class="fa-regular fa-heart"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-4 col-sm-6" title="hatdieutrang">
+							<div class="product-box product-block-item">
+								<div class="product-thumbnail">
+									<a class="image_thumb product-transition" href="#">
+										<img class="product-image" src="./image/hatdieutrang.png">
+									</a>
+									<span class="smart">
+										<span>-15%
+										</span>
+									</span>
+								</div>
+								<div class="product-info">
+									<div class="product-content">
+										<h3 class="product-name"><a href="#">Hạt điều trắng</a></h3>
+										<div class="blockprice">
+											<div class="price-box">
+												425.000₫ <span class="kg">/kg</span>
+												<span class="compare-price">500.000₫/kg</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product-action">
+									<a onclick="openForm('hatdieutrang')" class="xem_nhanh btn-circle btn_view btn">
+										<i class="fa-solid fa-eye"></i>
+									</a>
+									<a class="btn-cart firstb button_35 left-to tuychon" href="#">
+										<i class="fa-solid fa-cart-shopping"></i>
+									</a>
+									<a href="javascript:void(0)" class="btn btn_view action favorite-button">
+										<i class="fa-regular fa-heart"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="list-popup">
+		<div id="chuoinammy" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".chuoinammy" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/chuoinammy.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/chuoi1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/chuoi2.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/chuoi3.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/chuoi4.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/chuoi5.png" />
+							</swiper-slide>
+						</swiper-container>
+
+						<swiper-container class="chuoinammy commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/chuoinammy.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/chuoi1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/chuoi2.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/chuoi3.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/chuoi4.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/chuoi5.png" />
+							</swiper-slide>
+						</swiper-container>
+
+
+
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('chuoinammy')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Chuối Nam Mỹ</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">120.000đ</span>
+								<del class="old-price">150.000đ</del>
+							</span>
+							<p>Giống chuối già Nam Mỹ (Cavendish banana) <br>
+								Kích thước trái: 15-22 cm <br>
+								Tuổi trái: 7-7.5 tuần <br>
+								Đóng gói: 9-13 kgs/ thùng (net) <br>
+								Xuất xứ: Tây Ninh, Bình Dương, Đồng Nai, Vũng Tàu, Cần Thơ, Bình Phước.</p>
+						</div>
+						<div class="form_product_content">
+							<div class="row">
+								<div class="col-7 soluong1">
+									<label class="sl section">Số lượng:</label>
+									<div class="input_number">
+										<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+										<input type="text" value="1">
+										<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+									</div>
+									<button type="submit" class="add_to_cart">
+										<span class="btn-content">Cho vào giỏ</span>
+										<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+									</button>
+								</div>
+								<div class="col-5 source">
+									<span class="title_source">Quét mã sản phẩm </span>
+									<img class="maqr" src="./image/maqr1.png">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="taomy" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".taomy" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/taomy.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/taomy1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/taomy2.png" />
+							</swiper-slide>
+						</swiper-container>
+						<swiper-container class="taomy commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/taomy.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/taomy1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/taomy2.png" />
+							</swiper-slide>
+						</swiper-container>
+
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('taomy')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Táo Mỹ</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">86.000đ</span>
+								<del class="old-price">100.000đ</del>
+							</span>
+							<p>-Chiều cao: 6 đến 8 cm <br>
+								-Đóng gói: 10-12kg/thùng <br>
+								-Được trồng và sản xuất chủ yếu Washington và Minnesota<br>
+								-Táo Mỹ có một hương vị đặc trưng ngọt ngon, giòn và mật ong, với một chút hương vị chua
+								nhẹ<br></p>
+						</div>
+						<div class="form_product_content"> 
+							<div class="row">
+							<div class="col-7 soluong1">
+								<label class="sl section">Số lượng:</label>
+								<div class="input_number">
+									<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+									<input type="text" value="1">
+									<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+								</div>
+								<button type="submit" class="add_to_cart">
+									<span class="btn-content">Cho vào giỏ</span>
+									<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+								</button>
+							</div>
+							<div class="col-5 source">
+								<span class="title_source">Quét mã sản phẩm </span>
+								<img class="maqr" src="./image/maqr.png">
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="cachuabi" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<!-- <span class="img_quick_view"><img src="./image/chuoinammy.png"></span> -->
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".cachuabi" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/cachuabi.png" />
+							</swiper-slide>
+						</swiper-container>
+
+						<swiper-container class="cachuabi commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/cachuabi.png" />
+							</swiper-slide>
+
+						</swiper-container>
+
+
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('cachuabi')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Cà chua bi</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">45.000đ</span>
+								<del class="old-price">50.000đ</del>
+							</span>
+							<p> - Cà chua bi (Heirloom Tomato).<br>
+								- Thời gian thu hoạch: khoảng 70-90 ngày<br>
+								- Đóng gói :8 hoặc 12 quả trong mỗi hộp.<br>
+								- Cà chua bi có thể được trồng và sản xuất tại nhiều vùng trên khắp thế giới<br>
+							</p>
+						</div>
+						<div class="form_product_content"> 
+							<div class="row">
+							<div class="col-7 soluong1">
+								<label class="sl section">Số lượng:</label>
+								<div class="input_number">
+									<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+									<input type="text" value="1">
+									<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+								</div>
+								<button type="submit" class="add_to_cart">
+									<span class="btn-content">Cho vào giỏ</span>
+									<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+								</button>
+							</div>
+							<div class="col-5 source">
+								<span class="title_source">Quét mã sản phẩm </span>
+								<img class="maqr" src="./image/maqr.png">
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="raucaixanh" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<!-- <span class="img_quick_view"><img src="./image/chuoinammy.png"></span> -->
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".raucaixanh" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/raucaixanh.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/raucaixanh1.png" />
+							</swiper-slide>
+						</swiper-container>
+
+						<swiper-container class="raucaixanh commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/raucaixanh.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/raucaixanh1.png" />
+							</swiper-slide>
+						</swiper-container>
+
+
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('raucaixanh')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Rau cải bẹ xanh non</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">25.500đ</span>
+							</span>
+							<p> - Rau cải bẹ xanh (Broccoli)<br>
+								- Chiều cao: khoảng 60-90 cm<br>
+								- Đóng gói: 3-5kg/thùng<br>
+								- Đặc điểm về hương vị: Rau cải bẹ xanh có hương vị tươi mát, ngọt và nhẹ<br>
+							</p>
+						</div>
+						<div class="form_product_content"> 
+							<div class="row">
+							<div class="col-7 soluong1">
+								<label class="sl section">Số lượng:</label>
+								<div class="input_number">
+									<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+									<input type="text" value="1">
+									<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+								</div>
+								<button type="submit" class="add_to_cart">
+									<span class="btn-content">Cho vào giỏ</span>
+									<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+								</button>
+							</div>
+							<div class="col-5 source">
+								<span class="title_source">Quét mã sản phẩm </span>
+								<img class="maqr" src="./image/maqr.png">
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="thitlon" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<!-- <span class="img_quick_view"><img src="./image/chuoinammy.png"></span> -->
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".thitlon" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/thitlon.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/thitlon1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/thitlon2.png" />
+							</swiper-slide>
+						</swiper-container>
+
+						<swiper-container class="thitlon commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/thitlon.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/thitlon1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/thitlon2.png" />
+							</swiper-slide>
+
+						</swiper-container>
+
+
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('thitlon')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Thịt lợn nạt vai</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">105.000đ</span>
+								<del class="old-price">140.000đ</del>
+							</span>
+							<p> - Tên loại thịt: Thịt lợn nạt vai (Pork Shoulder) <br>
+								- Kích thước: nặng từ 2 đến 4,5 kg.<br>
+								- Tuổi: Tuổi của lợn khi thịt được lấy là từ 6 đến 8 tháng.<br>
+								- Màu sắc và hình dáng: màu hồng đến hồng nhạt<br>
+								- Đóng gói: Một mảnh thịt nguyên miếng/hộp<br>
+								- Đảm bảo sạch, tươi ngon 100% khi nhận hàng <br></p>
+						</div>
+						<div class="form_product_content"> 
+							<div class="row">
+							<div class="col-7 soluong1">
+								<label class="sl section">Số lượng:</label>
+								<div class="input_number">
+									<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+									<input type="text" value="1">
+									<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+								</div>
+								<button type="submit" class="add_to_cart">
+									<span class="btn-content">Cho vào giỏ</span>
+									<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+								</button>
+							</div>
+							<div class="col-5 source">
+								<span class="title_source">Quét mã sản phẩm </span>
+								<img class="maqr" src="./image/maqr.png">
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="suplotrang" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<!-- <span class="img_quick_view"><img src="./image/chuoinammy.png"></span> -->
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".suplotrang" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/suplotrang.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/suplotrang1.png" />
+							</swiper-slide>
+						</swiper-container>
+
+						<swiper-container class="suplotrang commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/suplotrang.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/suplotrang1.png" />
+
+						</swiper-container>
+
+
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('suplotrang')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Súp lơ trắng</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">27.000đ</span>
+								<del class="old-price">30.000đ</del>
+							</span>
+							<p> - Súp lơ trắng (Cauliflower)<br>
+								- Kích thước: khoảng 15-20 cm.<br>
+								- Cân nặng: 500-800 gram<br>
+								- Cách bảo quản:có thể được bảo quản trong tủ lạnh trong khoảng 1-2 tuần.
+							</p>
+						</div>
+						<div class="form_product_content"> 
+							<div class="row">
+							<div class="col-7 soluong1">
+								<label class="sl section">Số lượng:</label>
+								<div class="input_number">
+									<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+									<input type="text" value="1">
+									<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+								</div>
+								<button type="submit" class="add_to_cart">
+									<span class="btn-content">Cho vào giỏ</span>
+									<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+								</button>
+							</div>
+							<div class="col-5 source">
+								<span class="title_source">Quét mã sản phẩm </span>
+								<img class="maqr" src="./image/maqr.png">
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="namrom" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<!-- <span class="img_quick_view"><img src="./image/chuoinammy.png"></span> -->
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".namrom" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/namromsach.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/namromsach1.png" />
+							</swiper-slide>
+						</swiper-container>
+
+						<swiper-container class="namrom commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/namromsach.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/namromsach1.png" />
+							</swiper-slide>
+
+						</swiper-container>
+
+
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('namrom')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Nấm rơm sạch</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">162.000đ</span>
+								<del class="old-price">180.000đ</del>
+							</span>
+							<p> - Nấm rơm (Straw Mushroom)<br>
+								- Cân nặng: 10 đến 30 gram<br>
+								- Đóng gói: 100gram/hộp<br>
+								- Cách bảo quản: bảo quản trong tủ lạnh ở nhiệt độ từ 1 đến 4°C<br></p>
+						</div>
+						<div class="form_product_content"> 
+							<div class="row">
+							<div class="col-7 soluong1">
+								<label class="sl section">Số lượng:</label>
+								<div class="input_number">
+									<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+									<input type="text" value="1">
+									<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+								</div>
+								<button type="submit" class="add_to_cart">
+									<span class="btn-content">Cho vào giỏ</span>
+									<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+								</button>
+							</div>
+							<div class="col-5 source">
+								<span class="title_source">Quét mã sản phẩm </span>
+								<img class="maqr" src="./image/maqr.png">
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="duachuotthailan" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<!-- <span class="img_quick_view"><img src="./image/chuoinammy.png"></span> -->
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".duachuotthailan" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/duachuotthailan.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/duachuotthailan1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/duachuotthailan2.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/duachuotthailan3.png" />
+							</swiper-slide>
+						</swiper-container>
+
+						<swiper-container class="duachuotthailan commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/duachuotthailan.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/duachuotthailan1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/duachuotthailan2.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/duachuotthailan3.png" />
+							</swiper-slide>
+
+						</swiper-container>
+
+
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('duachuotthailan')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Dưa chuột Thái Lan</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">15.000đ</span>
+
+							</span>
+							<p> - Dưa chuột Thái Lan (Thai Cucumber)<br>
+								- Chiều dài: khoảng từ 15 đến 20 cm.<br>
+								- Cân nặng: 100 đến 150 gram.<br>
+
+								- Hương vị: Dưa chuột Thái Lan có vị ngọt, giòn và giữ được độ tươi lâu<br>
+							</p>
+						</div>
+						<div class="form_product_content"> 
+							<div class="row">
+							<div class="col-7 soluong1">
+								<label class="sl section">Số lượng:</label>
+								<div class="input_number">
+									<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+									<input type="text" value="1">
+									<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+								</div>
+								<button type="submit" class="add_to_cart">
+									<span class="btn-content">Cho vào giỏ</span>
+									<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+								</button>
+							</div>
+							<div class="col-5 source">
+								<span class="title_source">Quét mã sản phẩm </span>
+								<img class="maqr" src="./image/maqr.png">
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="nhotim" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<!-- <span class="img_quick_view"><img src="./image/chuoinammy.png"></span> -->
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".nhotim" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/nhotim.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/nhotim1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/nhotim2.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/nhotim3.png" />
+							</swiper-slide>
+						</swiper-container>
+
+						<swiper-container class="nhotim commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/nhotim.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/nhotim1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/nhotim2.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/nhotim3.png" />
+							</swiper-slide>
+
+						</swiper-container>
+
+
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('nhotim')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Nho tím</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">215.000đ</span>
+								<del class="old-price">250.000đ</del>
+
+							</span>
+							<p> - Nho tím (Grapes)<br>
+								- Hương vị: ngọt, mượt mà và có một chút hương thơm<br>
+								- Đóng gói: 1kg/hộp. <br>
+								- Bảo quản: Nho tím có thể được bảo quản trong ngăn mát của tủ lạnh</p>
+						</div>
+						<div class="form_product_content"> 
+							<div class="row">
+							<div class="col-7 soluong1">
+								<label class="sl section">Số lượng:</label>
+								<div class="input_number">
+									<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+									<input type="text" value="1">
+									<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+								</div>
+								<button type="submit" class="add_to_cart">
+									<span class="btn-content">Cho vào giỏ</span>
+									<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+								</button>
+							</div>
+							<div class="col-5 source">
+								<span class="title_source">Quét mã sản phẩm </span>
+								<img class="maqr" src="./image/maqr.png">
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="thanhlong" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<!-- <span class="img_quick_view"><img src="./image/chuoinammy.png"></span> -->
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".thanhlong" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/thanhlong.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/thanhlong1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/thanhlong2.png" />
+							</swiper-slide>
+						</swiper-container>
+
+						<swiper-container class="thanhlong commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/thanhlong.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/thanhlong1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/thanhlong2.png" />
+							</swiper-slide>
+
+						</swiper-container>
+
+
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('thanhlong')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Thanh long</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">12.000đ</span>
+								<del class="old-price">15.000đ</del>
+
+							</span>
+							<p> - Thanh long (Dragon Fruit)<br>
+								- Kích thước: 10-20 cm<br>
+								- Cân nặng: từ 150-600 gram <br>
+								- Đóng gói: 15-20kg/thùng. <br>
+								- Cách bảo quản: bảo quản ngăn mát của tủ lạnh hoặc hộp kín để ngăn tiếp xúc với không
+								khí
+							</p>
+						</div>
+						<div class="form_product_content"> 
+							<div class="row">
+							<div class="col-7 soluong1">
+								<label class="sl section">Số lượng:</label>
+								<div class="input_number">
+									<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+									<input type="text" value="1">
+									<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+								</div>
+								<button type="submit" class="add_to_cart">
+									<span class="btn-content">Cho vào giỏ</span>
+									<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+								</button>
+							</div>
+							<div class="col-5 source">
+								<span class="title_source">Quét mã sản phẩm </span>
+								<img class="maqr" src="./image/maqr.png">
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="taoxanh" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<!-- <span class="img_quick_view"><img src="./image/chuoinammy.png"></span> -->
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".taoxanh" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/taoxanh.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/taoxanh1.png" />
+							</swiper-slide>
+						</swiper-container>
+
+						<swiper-container class="taoxanh commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/taoxanh.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/taoxanh1.png" />
+							</swiper-slide>
+
+						</swiper-container>
+
+
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('taoxanh')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Táo xanh Pháp</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">81.000đ</span>
+								<del class="old-price">90.000đ</del>
+
+							</span>
+							<p> - Táo xanh (Green Apple)<br>
+								- Cân nặng: từ 100-200 gram <br>
+								- Đóng gói: 5-7kg/thùng. <br>
+								- Bảo quản: Đặt táo xanh trong ngăn mát của tủ lạnh</p>
+						</div>
+						<div class="form_product_content"> 
+							<div class="row">
+							<div class="col-7 soluong1">
+								<label class="sl section">Số lượng:</label>
+								<div class="input_number">
+									<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+									<input type="text" value="1">
+									<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+								</div>
+								<button type="submit" class="add_to_cart">
+									<span class="btn-content">Cho vào giỏ</span>
+									<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+								</button>
+							</div>
+							<div class="col-5 source">
+								<span class="title_source">Quét mã sản phẩm </span>
+								<img class="maqr" src="./image/maqr.png">
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="luudo" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<!-- <span class="img_quick_view"><img src="./image/chuoinammy.png"></span> -->
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".luudo" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/luudo.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/luudo1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/luudo2.png" />
+							</swiper-slide>
+						</swiper-container>
+
+						<swiper-container class="luudo commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/luudo.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/luudo1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/luudo2.png" />
+							</swiper-slide>
+
+						</swiper-container>
+
+
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('luudo')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Lựu đỏ</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">295.000đ</span>
+							</span>
+							<p> - Lựu đỏ (Pomegranate)<br>
+								- Cân nặng: 200-500 gram<br>
+								- Đóng gói: 5-7kg/thùng. <br>
+								- Bảo quản: có thể đặt nó trong ngăn mát của tủ lạnh<br></p>
+						</div>
+						<div class="form_product_content"> 
+							<div class="row">
+							<div class="col-7 soluong1">
+								<label class="sl section">Số lượng:</label>
+								<div class="input_number">
+									<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+									<input type="text" value="1">
+									<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+								</div>
+								<button type="submit" class="add_to_cart">
+									<span class="btn-content">Cho vào giỏ</span>
+									<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+								</button>
+							</div>
+							<div class="col-5 source">
+								<span class="title_source">Quét mã sản phẩm </span>
+								<img class="maqr" src="./image/maqr.png">
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="duahau" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".duahau" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/duahau.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/duahau1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/duahau2.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/duahau3.png" />
+							</swiper-slide>
+						</swiper-container>
+
+						<swiper-container class="duahau commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/duahau.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/duahau1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/duahau2.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/duahau3.png" />
+							</swiper-slide>
+
+						</swiper-container>
+
+
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('duahau')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Dưa hấu Miền Nam</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">12.000đ</span>
+								<del class="old-price">15.000đ</del>
+
+							</span>
+							<p>- Cân nặng: 3-7/kg<br>
+								- Hình dạng: Hình cầu hoặc hình dạng hơi dẹp,<br>
+								- Đóng gói: 15-20kg/thùng. <br>
+								- Xuất xứ: Nam như Tiền Giang, Vĩnh Long, Hậu Giang và Cần Thơ.<br>
+						</div>
+						<div class="form_product_content"> 
+						<div class="row">
+						<div class="col-7 soluong1">
+							<label class="sl section">Số lượng:</label>
+							<div class="input_number">
+								<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+								<input type="text" value="1">
+								<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+							</div>
+							<button type="submit" class="add_to_cart">
+								<span class="btn-content">Cho vào giỏ</span>
+								<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+							</button>
+						</div>
+						<div class="col-5 source">
+							<span class="title_source">Quét mã sản phẩm </span>
+							<img class="maqr" src="./image/maqr.png">
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="camthai" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".camthai" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/camthai.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/camthai1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/camthai2.png" />
+							</swiper-slide>
+						</swiper-container>
+
+						<swiper-container class="camthai commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/camthai.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/camthai1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/camthai2.png" />
+							</swiper-slide>
+
+						</swiper-container>
+
+
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('camthai')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Cam thái</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">80.000đ</span>
+
+
+							</span>
+							<p> - Cam Thái (Thai Orange) <br>
+								- Cân nặng: 150-300 gram<br>
+								- Đóng gói: 4-5quar/hộp. <br>
+								- Xuất xứ: Cam Thái được trồng và sản xuất chủ yếu tại Thái Lan<br>
+						</div>
+						<div class="form_product_content"> 
+						<div class="row">
+						<div class="col-7 soluong1">
+							<label class="sl section">Số lượng:</label>
+							<div class="input_number">
+								<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+								<input type="text" value="1">
+								<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+							</div>
+							<button type="submit" class="add_to_cart">
+								<span class="btn-content">Cho vào giỏ</span>
+								<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+							</button>
+						</div>
+						<div class="col-5 source">
+							<span class="title_source">Quét mã sản phẩm </span>
+							<img class="maqr" src="./image/maqr.png">
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="chanhxanh" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<!-- <span class="img_quick_view"><img src="./image/chuoinammy.png"></span> -->
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".chanhxanh" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/chanh.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/chanh1.png" />
+							</swiper-slide>
+						</swiper-container>
+
+						<swiper-container class="chanhxanh commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/chanh.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/chanh1.png" />
+							</swiper-slide>
+
+						</swiper-container>
+
+
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('chanhxanh')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Chanh xanh</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">23.000đ</span>
+
+								<del class="old-price">25.000đ</del>
+
+							</span>
+							<p> - Chanh xanh (green lime)<br>
+								- Kích thước: 3-5 cm<br>
+								- Cân nặng: 30-60 gram<br>
+								- Đóng gói: 20 quả/ hộp <br>
+								- Bảo quản: Trong ngăn mát tủ lạnh<br>
+							</p>
+						</div>
+						<div class="form_product_content"> 
+						<div class="row">
+						<div class="col-7 soluong1">
+							<label class="sl section">Số lượng:</label>
+							<div class="input_number">
+								<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+								<input type="text" value="1">
+								<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+							</div>
+							<button type="submit" class="add_to_cart">
+								<span class="btn-content">Cho vào giỏ</span>
+								<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+							</button>
+						</div>
+						<div class="col-5 source">
+							<span class="title_source">Quét mã sản phẩm </span>
+							<img class="maqr" src="./image/maqr.png">
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="hanhtaydo" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".hanhtaydo" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/hanhtay.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/hanhtay1.png" />
+							</swiper-slide>
+						</swiper-container>
+
+						<swiper-container class="hanhtaydo commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/hanhtay.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/hanhtay1.png" />
+							</swiper-slide>
+
+						</swiper-container>
+
+
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('hanhtaydo')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Hành tây đỏ</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">20.000đ</span>
+
+
+							</span>
+							<p> - hành tây đỏ (red onion)<br>
+								- Kích thước: 5-7 cm.<br>
+								- Cân nặng: 100-150 gram.<br>
+								- Đóng gói: 7kg/ thùng <br>
+								- Bảo quản: Trong ngăn mát tủ lạnh<br>
+							</p>
+						</div>
+						<div class="form_product_content"> 
+						<div class="row">
+						<div class="col-7 soluong1">
+							<label class="sl section">Số lượng:</label>
+							<div class="input_number">
+								<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+								<input type="text" value="1">
+								<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+							</div>
+							<button type="submit" class="add_to_cart">
+								<span class="btn-content">Cho vào giỏ</span>
+								<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+							</button>
+						</div>
+						<div class="col-5 source">
+							<span class="title_source">Quét mã sản phẩm </span>
+							<img class="maqr" src="./image/maqr.png">
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="xalachRomaine" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".xalachRomaine" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/xalach.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/xalach1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/xalach2.png" />
+							</swiper-slide>
+						</swiper-container>
+						<swiper-container class="xalachRomaine commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/xalach.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/xalach1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/xalach2.png" />
+							</swiper-slide>
+						</swiper-container>
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('xalachRomaine')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Xà lách</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">33.250đ</span>
+								<del class="old-price">35.000đ</del>
+
+
+							</span>
+							<p> 
+								- Kích thước: dài từ 15-30 cm và rộng từ 5-10 cm.<br>
+								- Cân nặng: 300-500 gram.<br>
+								- Đóng gói: 5-7kg/ thùng. <br>
+								- Bảo quản: Trong ngăn mát tủ lạnh<br>
+							</p>
+						</div>
+						<div class="form_product_content"> 
+						<div class="row">
+						<div class="col-7 soluong1">
+							<label class="sl section">Số lượng:</label>
+							<div class="input_number">
+								<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+								<input type="text" value="1">
+								<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+							</div>
+							<button type="submit" class="add_to_cart">
+								<span class="btn-content">Cho vào giỏ</span>
+								<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+							</button>
+						</div>
+						<div class="col-5 source">
+							<span class="title_source">Quét mã sản phẩm </span>
+							<img class="maqr" src="./image/maqr.png">
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="hatdieukho" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".hatdieukho" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/hatdieukho.png" />
+							</swiper-slide>
+
+						</swiper-container>
+
+						<swiper-container class="hatdieukho commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/hatdieukho.png" />
+							</swiper-slide>
+
+						</swiper-container>
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('hatdieukho')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Hạt điều khô</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">320.000đ</span>
+
+								<del class="old-price">350.000đ</del>
+
+							</span>
+							<p> - Hạt điều khô (dried cashew nuts)<br>
+								- Kích thước: 1-2 cm.<br>
+								- Cân nặng: 1-2 gram.<br>
+								- Đóng gói: 500 gram/hộp. <br>
+								- Bảo quản: trong hộp kín hoặc túi ni lông,lưu trữ nơi khô ráo, mát mẻ, <br>
+								- Xuất xứ: Bình Phước, Đồng Nai, Đăk Lăk.
+							</p>
+						</div>
+						<div class="form_product_content"> 
+						<div class="row">
+						<div class="col-7 soluong1">
+							<label class="sl section">Số lượng:</label>
+							<div class="input_number">
+								<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+								<input type="text" value="1">
+								<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+							</div>
+							<button type="submit" class="add_to_cart">
+								<span class="btn-content">Cho vào giỏ</span>
+								<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+							</button>
+						</div>
+						<div class="col-5 source">
+							<span class="title_source">Quét mã sản phẩm </span>
+							<img class="maqr" src="./image/maqr.png">
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="hatdauxanh" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<!-- <span class="img_quick_view"><img src="./image/chuoinammy.png"></span> -->
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".hatdauxanh" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/dauxanh.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/dauxanh1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/dauxanh2.png" />
+							</swiper-slide>
+						</swiper-container>
+
+						<swiper-container class="hatdauxanh commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/dauxanh.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/dauxanh1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/dauxanh2.png" />
+							</swiper-slide>
+
+						</swiper-container>
+
+
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('hatdauxanh')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Hạt đậu xanh</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">25.000đ</span>
+
+
+							</span>
+							<p> - Hạt đậu xanh (green mung beans)<br>
+								- Kích thước: 3-5 mm<br>
+								- Cân nặng: 0.1-0.3 gram.<br>
+								- Đóng gói: 1kg /hộp. <br>
+								- Bảo quản: trong hộp kín hoặc túi ni lông,lưu trữ nơi khô ráo, mát mẻ. <br>
+								- Xuất xứ: Thanh Hoá, Hải Dương, An Giang.
+							</p>
+						</div>
+						<div class="form_product_content"> 
+						<div class="row">
+						<div class="col-7 soluong1">
+							<label class="sl section">Số lượng:</label>
+							<div class="input_number">
+								<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+								<input type="text" value="1">
+								<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+							</div>
+							<button type="submit" class="add_to_cart">
+								<span class="btn-content">Cho vào giỏ</span>
+								<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+							</button>
+						</div>
+						<div class="col-5 source">
+							<span class="title_source">Quét mã sản phẩm </span>
+							<img class="maqr" src="./image/maqr.png">
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="hatdieutrang" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<!-- <span class="img_quick_view"><img src="./image/chuoinammy.png"></span> -->
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".hatdieutrang" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/hatdieutrang.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/hatdieutrang1.png" />
+							</swiper-slide>
+						</swiper-container>
+
+						<swiper-container class="hatdieutrang commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/hatdieutrang.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/hatdieutrang1.png" />
+							</swiper-slide>
+
+						</swiper-container>
+
+
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('hatdieutrang')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Hạt điều trắng</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">460.000đ</span>
+								<del class="old-price">500.000đ</del>
+
+							</span>
+							<p> - Hạt điều trắng (white cashew nuts)<br>
+								- Kích thước: từ 1.5-2 cm.<br>
+								- Cân nặng: 1.5-3 gram.<br>
+								- Đóng gói: 1kg /hộp. <br>
+								- Bảo quản: trong hộp kín hoặc túi ni lông,lưu trữ nơi khô ráo, mát mẻ <br>
+								- Xuất xứ: Bình Phước, Đồng nai, Phú Yên.
+							</p>
+						</div>
+						<div class="form_product_content"> 
+						<div class="row">
+						<div class="col-7 soluong1">
+							<label class="sl section">Số lượng:</label>
+							<div class="input_number">
+								<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+								<input type="text" value="1">
+								<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+							</div>
+							<button type="submit" class="add_to_cart">
+								<span class="btn-content">Cho vào giỏ</span>
+								<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+							</button>
+						</div>
+						<div class="col-5 source">
+							<span class="title_source">Quét mã sản phẩm </span>
+							<img class="maqr" src="./image/maqr.png">
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="hathanhnhan" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<!-- <span class="img_quick_view"><img src="./image/chuoinammy.png"></span> -->
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".hathanhnhan" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/hathanhnhan.png" />
+							</swiper-slide>
+						</swiper-container>
+
+						<swiper-container class="hathanhnhan commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/hathanhnhan.png" />
+							</swiper-slide>
+						</swiper-container>
+
+
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('hathanhnhan')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Hạt hạnh nhân</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">470.000đ</span>
+								<del class="old-price">520.000đ</del>
+
+							</span>
+							<p> - Hạt hạnh nhân (hazelnuts)<br>
+								- Kích thước: từ 1.5-2 cm.<br>
+								- Cân nặng: 1-2 gram.<br>
+								- Đóng gói: 1kg /hộp. <br>
+								- Bảo quản: trong hộp kín hoặc túi ni lông,lưu trữ nơi khô ráo, mát mẻ <br>
+							</p>
+						</div>
+						<div class="form_product_content"> 
+						<div class="row">
+						<div class="col-7 soluong1">
+							<label class="sl section">Số lượng:</label>
+							<div class="input_number">
+								<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+								<input type="text" value="1">
+								<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+							</div>
+							<button type="submit" class="add_to_cart">
+								<span class="btn-content">Cho vào giỏ</span>
+								<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+							</button>
+						</div>
+						<div class="col-5 source">
+							<span class="title_source">Quét mã sản phẩm </span>
+							<img class="maqr" src="./image/maqr.png">
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="hatoccho" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".hatoccho" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/hatoccho.png" />
+							</swiper-slide>
+						</swiper-container>
+
+						<swiper-container class="hatoccho commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/hatoccho.png" />
+							</swiper-slide>
+						</swiper-container>
+
+
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('hatoccho')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Hạt óc chó</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">240.000đ</span>
+								<del class="old-price">300.000đ</del>
+
+							</span>
+							</span>
+							<p> - Hạt óc chó (walnuts)<br>
+								- Kích thước: từ 3-5 cm.<br>
+								- Cân nặng: 5-10 gram.<br>
+								- Đóng gói: 1kg /hộp. <br>
+								- Bảo quản: trong hộp kín hoặc túi ni lông,lưu trữ nơi khô ráo, mát mẻ <br>
+							</p>
+						</div>
+						<div class="form_product_content"> 
+						<div class="row">
+						<div class="col-7 soluong1">
+							<label class="sl section">Số lượng:</label>
+							<div class="input_number">
+								<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+								<input type="text" value="1">
+								<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+							</div>
+							<button type="submit" class="add_to_cart">
+								<span class="btn-content">Cho vào giỏ</span>
+								<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+							</button>
+						</div>
+						<div class="col-5 source">
+							<span class="title_source">Quét mã sản phẩm </span>
+							<img class="maqr" src="./image/maqr.png">
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="tombien" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".tombien" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/tombien.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/tombien1.png" />
+							</swiper-slide>
+						</swiper-container>
+
+						<swiper-container class="tombien commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/tombien.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/tombien1.png" />
+							</swiper-slide>
+
+						</swiper-container>
+
+
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('tomsu')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Tôm biển</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">306.000đ</span>
+								<del class="old-price">360.000đ</del>
+
+							</span>
+							<p>
+								- Kích thước: 15-30 cm.<br>
+								- Cân nặng: 200-500 gram.<br>
+								- Đóng gói: 3-5 con/hộp. <br>
+								- Bảo quản: Bảo quản trong ngăn đá tủ lạnh <br>
+							</p>
+						</div>
+						<div class="form_product_content"> 
+						<div class="row">
+						<div class="col-7 soluong1">
+							<label class="sl section">Số lượng:</label>
+							<div class="input_number">
+								<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+								<input type="text" value="1">
+								<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+							</div>
+							<button type="submit" class="add_to_cart">
+								<span class="btn-content">Cho vào giỏ</span>
+								<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+							</button>
+						</div>
+						<div class="col-5 source">
+							<span class="title_source">Quét mã sản phẩm </span>
+							<img class="maqr" src="./image/maqr.png">
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="cahoi" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".cahoi" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/cahoi.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/cahoi1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/cahoi2.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/cahoi3.png" />
+							</swiper-slide>
+						</swiper-container>
+
+						<swiper-container class="cahoi commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/cahoi.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/cahoi1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/cahoi2.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/cahoi3.png" />
+							</swiper-slide>
+
+						</swiper-container>
+
+
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('cahoi')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Cá hồi</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">693.000đ</span>
+								<del class="old-price">770.000đ</del>
+
+							</span>
+							<p> - Cá hồi (salmon) <br>
+								- Kích thước: 60-120 cm.<br>
+								- Cân nặng: 2-14 kg.<br>
+								- Đóng gói: 2kg/hộp. <br>
+								- Bảo quản: Bảo quản trong ngăn đá tủ lạnh <br>
+							</p>
+						</div>
+						<div class="form_product_content"> 
+						<div class="row">
+						<div class="col-7 soluong1">
+							<label class="sl section">Số lượng:</label>
+							<div class="input_number">
+								<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+								<input type="text" value="1">
+								<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+							</div>
+							<button type="submit" class="add_to_cart">
+								<span class="btn-content">Cho vào giỏ</span>
+								<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+							</button>
+						</div>
+						<div class="col-5 source">
+							<span class="title_source">Quét mã sản phẩm </span>
+							<img class="maqr" src="./image/maqr.png">
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="cuabe" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<!-- <span class="img_quick_view"><img src="./image/chuoinammy.png"></span> -->
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".cuabe" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/cuabe.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/cuabe1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/cuabe2.png" />
+							</swiper-slide>
+						</swiper-container>
+
+						<swiper-container class="cuabe commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/cuabe.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/cuabe1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/cuabe2.png" />
+							</swiper-slide>
+						</swiper-container>
+
+
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('cuabe')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Cua bể</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">580.000đ</span>
+
+
+								<p> - Cua bể (aquarium crab) <br>
+									- Kích thước: 15-30 cm.<br>
+									- Cân nặng: 500-800 gram,.<br>
+									- Đóng gói: 2kg/hộp. <br>
+									- Bảo quản: Bảo quản trong ngăn đá tủ lạnh <br>
+								</p>
+						</div>
+						<div class="form_product_content"> 
+						<div class="row">
+						<div class="col-7 soluong1">
+							<label class="sl section">Số lượng:</label>
+							<div class="input_number">
+								<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+								<input type="text" value="1">
+								<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+							</div>
+							<button type="submit" class="add_to_cart">
+								<span class="btn-content">Cho vào giỏ</span>
+								<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+							</button>
+						</div>
+						<div class="col-5 source">
+							<span class="title_source">Quét mã sản phẩm </span>
+							<img class="maqr" src="./image/maqr.png">
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="mucthanhhoa" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<!-- <span class="img_quick_view"><img src="./image/chuoinammy.png"></span> -->
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".mucthanhhoa" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/muathanhhoa.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/muathanhhoa1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/muathanhhoa2.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/muathanhhoa3.png" />
+							</swiper-slide>
+						</swiper-container>
+
+						<swiper-container class="mucthanhhoa commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/muathanhhoa.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/muathanhhoa1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/muathanhhoa2.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/muathanhhoa3.png" />
+							</swiper-slide>
+
+						</swiper-container>
+
+
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('mucthanhhoa')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Mực Thanh Hoá</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">255.200đ</span>
+								<del class="old-price">290.000đ</del>
+
+							</span>
+							<p>- Kích thước: 15-20 cm.<br>
+								- Đóng gói: 10-15kg/thùng. <br>
+								- Xuất xứ: Mực Thanh Hóa được săn bắt và thu hoạch từ vùng biển Thanh Hóa và các vùng
+								biển lân cận.
+							</p>
+						</div>
+						<div class="form_product_content"> 
+						<div class="row">
+						<div class="col-7 soluong1">
+							<label class="sl section">Số lượng:</label>
+							<div class="input_number">
+								<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+								<input type="text" value="1">
+								<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+							</div>
+							<button type="submit" class="add_to_cart">
+								<span class="btn-content">Cho vào giỏ</span>
+								<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+							</button>
+						</div>
+						<div class="col-5 source">
+							<span class="title_source">Quét mã sản phẩm </span>
+							<img class="maqr" src="./image/maqr.png">
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="thitbouc" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+						<!-- <span class="img_quick_view"><img src="./image/chuoinammy.png"></span> -->
+						<swiper-container style="--swiper-navigation-color: #339538; --swiper-pagination-color: #fff"
+							class="mySwiper" thumbs-swiper=".thitbouc" loop="true" space-between="10"
+							navigation="true">
+							<swiper-slide>
+								<img src="./image/thitbo.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/thitbo1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/thitbo2.png" />
+							</swiper-slide>
+						</swiper-container>
+
+						<swiper-container class="thitbouc commonswipper" loop="true" space-between="10" slides-per-view="4"
+							free-mode="true" watch-slides-progress="true">
+							<swiper-slide>
+								<img src="./image/thitbo.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/thitbo1.png" />
+							</swiper-slide>
+							<swiper-slide>
+								<img src="./image/thitbo2.png" />
+							</swiper-slide>
+						</swiper-container>
+					</div>
+					<div class="col-6 product_right">
+						<div class="close_button">
+							<i class="fa fa-times" onclick="closeForm('thitbouc')"></i>
+						</div>
+						<div class="title_product">
+							<h3><a href="#">Thịt bò Úc</h3>
+						</div>
+						<div class="product_inf">
+							<span class="prices price-box">
+								<span class="price product_price sale-price on-sale">551.000đ</span>
+								<del class="old-price">580.000đ</del>
+
+							</span>
+							<p>
+								- Kích thước: 20-30 cm.<br>
+								- Cân nặng: 300-500 gram,.<br>
+								- Đóng gói: 1miếng/hộp. <br>
+								- Bảo quản: Bảo quản trong ngăn đá tủ lạnh <br>
+							</p>
+						</div>
+						<div class="form_product_content"> 
+						<div class="row">
+						<div class="col-7 soluong1">
+							<label class="sl section">Số lượng:</label>
+							<div class="input_number">
+								<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+								<input type="text" value="1">
+								<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+							</div>
+							<button type="submit" class="add_to_cart">
+								<span class="btn-content">Cho vào giỏ</span>
+								<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+							</button>
+						</div>
+						<div class="col-5 source">
+							<span class="title_source">Quét mã sản phẩm </span>
+							<img class="maqr" src="./image/maqr.png">
+						</div>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="baoquanraucu" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+		<img src="./image/baoquanraucu.png">
+         </div>
+		 <div class="col-6 product_right">
+			<div class="close_button">
+				<i class="fa fa-times" onclick="closeForm('baoquanraucu')"></i>
+			</div>		
+			<div class="title_product1">
+				<p>Bảo quản rau củ đúng cách trong tủ lạnh</p>
+			</div>
+			<div class="product_inf1">
+				<p>
+					- Loại bỏ những phần rau củ bị hỏng trước khi bảo quản<br>
+					- Không rửa rau củ quả trước khi cho vào tủ lạnh<br>
+					- Phân loại rau củ trước khi bảo quản<br>
+					- Sử dụng kết hợp khăn giấy khô và túi zip hoặc bọc nilon <br>
+					- Bảo quản ở nhiệt độ thích hợp<br>
+				</p>
+			</div>
+		</div>
+		<div class="col-12 product_main">
+			<div class="title_product1">
+				<p>Bảo quản rau củ đúng cách trong tủ lạnh</p>
+			</div>
+			<div class="product_inf1">
+				<p>- Tuyệt đối không được để các loại rau củ lẫn lộn với nhau,
+					 mà thay vào đó bạn phải sắp xếp và cho từng loại ra túi
+					  hoặc hộp riêng. Vì khi có một loại bị hư, héo sẽ làm lây
+					   lan sang các loại rau củ khác, ảnh hưởng đến chất lượng. <br>
+					- Nếu bạn chưa dùng ngay thì nên hạn chế việc rửa và sơ chế rau 
+					củ lại, bởi nước sẽ tạo độ ẩm cho rau củ và đây cũng là môi 
+					trường tuyệt vời để vi khuẩn sinh sôi. <br>
+					- Hạn chế việc để rau củ quả bên ngoài một thời gian dài rồi 
+					lại cho vào tủ lạnh. Ngoài ra, bạn chỉ nên mua một lượng vừa 
+					đủ dùng và mua mới rau củ mỗi ngày sẽ tốt cho sức khỏe hơn nhé. <br>
+				</p>
+			</div>
+		</div>
+			</div>
+		</div>
+		</div>
+		<div id="baoquantraicay" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-6 product_left">
+		<img src="./image/baoquantraicay.png">
+         </div>
+		 <div class="col-6 product_right">
+			<div class="close_button">
+				<i class="fa fa-times" onclick="closeForm('baoquantraicay')"></i>
+			</div>		
+			<div class="title_product1">
+				<p>Kinh nghiệm bảo quản trái cây phổ biến</p>
+			</div>
+			<div class="product_inf1">
+				<p>
+	- Đối với khoai lang, dưa hấu, cà chua, bạn không nên bảo quản chúng
+	 trong tủ lạnh vì điều này sẽ làm mất hương vị cũng như chất dinh dưỡng cần thiết.<br>
+	 - Trái cây chứa nhiều đường hoặc cấu tạo quả mềm như chuối, bơ... cũng cần lưu trữ bên
+	  ngoài cho đến khi chín mới được cho vào tủ lạnh.<br>
+				</p>
+			</div>
+		</div>
+		<div class="col-12 product_main">
+		<div class="title_product1">
+				<p>Chuẩn bị trước khi cho vào tủ lạnh</p>
+			</div>
+			<div class="product_inf1">
+				<p>
+					- Loại bỏ phần đã hỏng hoặc quá chín với dao sạch. Lưu ý là trước khi thực hiện, bạn nên vệ sinh khu bếp sạch sẽ để tránh vi khuẩn có hại xâm nhập vào trái cây.<br>
+					- Nhiều người có thói quen rửa sạch trái cây trước khi cho vào tủ lạnh, điều này là hoàn toàn sai lầm nhé! Bạn không nên rửa trước vì như thế sẽ làm quả mất đi lớp kháng thể tự nhiên ở bên ngoài, khiến vi khuẩn dễ xâm nhập hơn. Khi nào bạn cần dùng hãy rửa chúng.<br>
+					- Sử dụng túi lưới để bảo quản trái cây trong tủ lạnh vừa giúp làm lạnh thông thoáng, vừa tránh làm dập trong quá trình sắp xếp.<br>
+					- Nếu dùng bao ni lông hoặc hộp, hãy đục khoảng 20 lỗ để đảm bảo nó được thoáng khí, giúp hạn chế tình trạng hô hấp yếm khí, kéo dài thời gian tươi ngon của trái cây.<br>
+				</p>
+			</div>
+		</div>
+			</div>
+		</div>
+		</div>
+		<div id="baoquanthucpham" class="quickview_overlay">
+			<div class="quick_view_product">
+				<div class="row">
+					<div class="col-12 product_right">
+		<img src="./image/baoquantraicay.png">
+         </div>
+		 <div class="col-12 product_main">
+			<div class="close_button close_button_special">
+				<i class="fa fa-times" onclick="closeForm('baoquanthucpham')"></i>
+			</div>		
+			<div class="title_product1">
+				<p>Bảo quản thực phẩm an toàn, tươi , ngon</p>
+			</div>
+			<div class="product_inf1">
+				<div class="row">
+				<p class="col-6">
+	                - Phân loại thực phẩm trước khi cho vào tủ lạnh .<br>
+					- Đóng gói thực phẩm an toàn <br>
+					- Không để quá nhiều đồ trong tủ lạnh <br>
+					- Đặt nhiệt độ phù hợp để bảo quản từng loại thực phẩm <br>
+					- Vệ sinh tủ lạnh thường xuyên <br>
+				</p>
+				<p class="col-6">
+					- Đông lạnh thực phẩm <br>
+					- Sắp xếp thực phẩm một cách hợp lý <br>
+					- Chú ý khi bảo quản những thực phẩm có mùi <br>
+					- Dùng tủ lạnh có những chức năng bảo quản phù hợp <br>
+					- Không để đồ ăn quá lâu
+				</p>
+			</div>
+		</div>
+		</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<section id="tintuc" class="section_3banner">
+		<div class="container">
+			<div class="row">
+				<div class="col col-xl-3 col-lg-3 col-md-3 col-12 hidden-xs">
+					<div class="banner_1">
+						<a class="banner_" href="#" title="Banner 1">
+							<img class="product-image" src="./image/banner_1.png" />
+						</a>
+					</div>
+				</div>
+				<div class="col col-xl-6 col-lg-6 col-md-6 col-12">
+					<div class="banner_2">
+						<a class="banner_" href="#" title="Banner 2">
+							<img class="product-image" src="./image/banner_2.png" />
+						</a>
+					</div>
+				</div>
+				<div class="col col-xl-3 col-lg-3 col-md-3 col-12 hidden-xs banner3">
+					<div class="banner_3">
+						<a class="banner_" href="#" title="Banner 3">
+							<img class="product-image" src="./image/banner_3.png" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="baoquan" class="section_tab_product">
+		<div class="bg_module2">
+		<div class="container">
+			<div class="title_modules">
+				<h2 class="title_tab title_tab2">
+					<span>HƯỚNG DẪN BẢO QUẢN</span>
+				</h2>
+			</div>
+			<div class="row row2">
+				<div class="col-xl-4 col-lg-4 col-sm-6">
+					<div onclick="openForm('baoquantraicay')" class="product-box product-block-item preserve">
+						<div class="product-thumbnail">
+							<a class="image_thumb product-transition image_thumb2">
+								<img class="product-image" src="./image/fruit.png">
+							</a>
+						</div>
+						<div class="instruct_hidden">
+							<h4 class="title_instruct">
+								<span>Trái cây</span>
+							</h4>
+							<h5 class="title_instruct2">
+								<span>Nhấn để xem</span>
+							</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-sm-6">
+					<div onclick="openForm('baoquanraucu')" class="product-box product-block-item preserve">
+						<div class="product-thumbnail">
+							<a class="image_thumb product-transition image_thumb2" href="#">
+								<img class="product-image" src="./image/vegetable.png">
+							</a>
+						</div>
+						<div class="instruct_hidden">
+							<h4 class="title_instruct">
+								<span>Rau củ quả</span>
+							</h4>
+							<h5 class="title_instruct2">
+								<span>Nhấn để xem</span>
+							</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-sm-6">
+					<div onclick="openForm('baoquanthucpham')" class="product-box product-block-item preserve">
+						<div class="product-thumbnail">
+							<a class="image_thumb product-transition image_thumb2" href="#">
+								<img class="product-image" src="./image/food.png">
+							</a>
+						</div>
+						<div class="instruct_hidden">
+							<h4 class="title_instruct">
+								<span>Thực phẩm</span>
+							</h4>
+							<h5 class="title_instruct2">
+								<span>Nhấn để xem</span>
+							</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<div class="danhgia">
+		<div class="slider">
+			<div class="slider-container">
+			  <div class="slide">
+				<div class="swiper">
+					<span class="dau"><i class="fa-solid fa-quote-left"></i></span>
+					<p class="eva">Tôi hài lòng với sản phẩm ở đây. Tôi đánh giá cao đội ngũ chăm sóc khách hàng luôn tận tình và tư vấn những sản phẩm phù hợp.</p>
+					<div class="name"> Lê Quang</div>
+					<p class="job">Lập trình viên</p>
+				</div> 
+				<div class="myswiper">
+					<img src="./image/danhgia1.jpg" alt="">
+				 </div>
+			  </div>
+			 
+			 
+			</div>
+		
+			<div class="slider-controls">
+			  <button id="prevBtn"><i class="fa-solid fa-angle-left"></i></button>
+			  <button id="nextBtn"> <i class="fa-solid fa-angle-right"></i></button>
+			</div>
+		  </div>
+		
+		  <script>
+			var sliderContainer = document.querySelector('.slider-container');
+			var prevBtn = document.querySelector('#prevBtn');
+			var nextBtn = document.querySelector('#nextBtn');
+			var slideWidth = document.querySelector('.slide').offsetWidth;
+			var currentIndex = 0;
+		
+			prevBtn.addEventListener('click', function() {
+			  if (currentIndex === 0) {
+				currentIndex = sliderContainer.childElementCount - 1;
+			  } else {
+				currentIndex--;
+			  }
+			  sliderContainer.style.transform = 'translateX(' + (-slideWidth * currentIndex) + 'px)';
+			});
+		
+			nextBtn.addEventListener('click', function() {
+			  if (currentIndex === sliderContainer.childElementCount - 1) {
+				currentIndex = 0;
+			  } else {
+				currentIndex++;
+			  }
+			  sliderContainer.style.transform = 'translateX(' + (-slideWidth * currentIndex) + 'px)';
+			});
+		  </script>
+	</div>
+	<div class="bot-body">
+		<h2><a href="">tin tức nông nghiệp</a> </h2>
+		<div class="tintuc">
+			<div class="row">
+				<div class="tintuc0 col-lg-4 col-md-6 col-sm-12">
+					<img src="./image/tintuc1.webp" alt="">
+					<div class="conten-blog">
+						<h4><a href="">Rau xanh tăng giá mạnh vì trời mưa, người dân nội thành lao đao</a></h4>
+					</div>
+
+					<div class="time2">
+						<span class="author"><i class="fa-solid fa-user"></i> T&Q Team</span>
+						<span class="clock"><i class="fa-solid fa-clock"></i> Ngày 15/06.2023</span>
+
+					</div>
+					<p>Khoảng gần một tuần nay, do ảnh hưởng của những cơn mưa lớn kéo dài liên tiếp nên nguồn cung rau
+						xanh cho các chợ bắt đầu
+						a những cơn mưa lớn kéo dài liên tiếp nên nguồn cung rau xanh cho các chợ bắt đầu
+					</p>
+
+				</div>
+				<div class="tintuc0 col-lg-4 col-md-6 col-sm-12">
+					<img src="./image/tintuc2.webp" alt="">
+					<div class="conten-blog">
+						<h4><a href="">Rau xanh tăng giá mạnh vì trời mưa, người dân nội thành lao đao</a></h4>
+					</div>
+
+					<div class="time2">
+						<span class="author"><i class="fa-solid fa-user"></i> T&Q Team</span>
+						<span class="clock"><i class="fa-solid fa-clock"></i> Ngày 15/06.2023</span>
+
+					</div>
+					<p>Khoảng gần một tuần nay, do ảnh hưởng của những cơn mưa lớn kéo dài liên tiếp nên nguồn cung rau
+						xanh cho các chợ bắt đầu
+						a những cơn mưa lớn kéo dài liên tiếp nên nguồn cung rau xanh cho các chợ bắt đầu
+					</p>
+				</div>
+				<div class="tintuc0 tintuc3 col-lg-4 col-md-6 col-sm-12">
+					<img src="./image/tintuc3.webp" alt="">
+					<div class="conten-blog">
+						<h4><a href="">Rau xanh tăng giá mạnh vì trời mưa, người dân nội thành lao đao</a></h4>
+					</div>
+
+					<div class="time2">
+						<span class="author"><i class="fa-solid fa-user"></i> T&Q Team</span>
+						<span class="clock"><i class="fa-solid fa-clock"></i> Ngày 15/06.2023</span>
+
+					</div>
+					<p>Khoảng gần một tuần nay, do ảnh hưởng của những cơn mưa lớn kéo dài liên tiếp nên nguồn cung rau
+						xanh cho các chợ bắt đầu
+						a những cơn mưa lớn kéo dài liên tiếp nên nguồn cung rau xanh cho các chợ bắt đầu
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="footer">
+		<div class="top-footer">
+			<div class="service">
+				<div class="left-service">
+					<div class="title-service"> Hỗ trợ 24/7</div>
+					<div class="sumary-service">Liên hệ chúng tôi 24h</div>
+				</div>
+				<div class="right-service">
+					<span><i class="fa-solid fa-headphones"></i></span>
+				</div>
+			</div>
+			<div class="service s2">
+				<div class="left-service">
+					<div class="title-service"> Thanh toán</div>
+					<div class="sumary-service">Bảo mật thanh toán</div>
+				</div>
+				<div class="right-service">
+					<span><i class="fa-solid fa-shop"></i></span>
+				</div>
+			</div>
+			<div class="service s3">
+				<div class="left-service">
+					<div class="title-service"> Giao hàng</div>
+					<div class="sumary-service">Giao hàng tận nhà</div>
+				</div>
+				<div class="right-service">
+					<span><i class="fa-solid fa-truck"></i></span>
+				</div>
+			</div>
+		</div>
+		<div class="bot-footer">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="top-logo">
+						<a href=""> <img src="./image/logo_header.png" alt=""></a>
+					</div>
+					<div class="mid-logo"><p>Cửa hàng <b>Nông sản sạch</b> là một website cũng cấp thực phẩm an toàn, nông sản sạch cho người dân.
+					</p>
+				</div>
+				<div class="bot-logo"></div>
+					<div class="content-logo">
+						<span class="left-logo">
+							<i class="fas fa-map-marker-alt"></i>
+						</span>
+						<span class="right-logo">
+							Trường Đại học Công nghệ Thông tin và Truyền thông Việt Hàn
+						</span>
+					</div>
+					<div class="phone-logo">
+						<span class="left-logo">
+							<i class="fa-brands fa-whatsapp"></i>
+						</span>
+						<span class="right-logo">
+							<a href="">1900 6750</a>
+						</span>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<div class="row">
+						<div class="chungtoi col-lg-6 col-md-6 col-xs-12">
+							<h5 class="title-menu">
+								Về chúng tôi
+							</h5>
+							<div class="content-menu row">
+								<div class="col-lg-6 col-md-12">
+									<ul class="list-menu">
+										<li class="li-menu"><a href="">Trang chủ</a></li>
+										<li class="li-menu"><a href="">Giới thiệu</a></li>
+										<li class="li-menu"><a href="">Sản phẩm</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-6 col-md-12">
+									<ul class="list-menu">
+										<li class="li-menu"><a href="">Đặt hàng</a></li>
+										<li class="li-menu"><a href="">Tin tức</a></li>
+										<li class="li-menu"><a href="">Liên hệ</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="email ">
+								<div class="left-email">
+									<span><i class="fa-regular fa-envelope"></i></span>
+									
+								</div>
+								<div class="right-gmail">
+									<div class="title-gmail"> Đăng ký</div>
+									<div class="sumary-gmail">Nhận thông tin khuyến mãi</div>
+								</div>
+							</div>
+						</div>
+						<div class="khachhang col-lg-6 col-md-6 col-xs-12">
+							<h5 class="title-menu">
+								Hỗ trợ khách hàng
+							</h5>
+							<div class="content-menu row">
+								<div class="col-6">
+									<ul class="list-menu">
+										<li class="li-menu"><a href="">Trang chủ</a></li>
+										<li class="li-menu"><a href="">Giới thiệu</a></li>
+										<li class="li-menu"><a href="">Sản phẩm</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="email-form">
+								<input class="input-form" type="text" placeholder="EMAIL">
+								<button class="bt-form"> Đăng ký</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="end">Nguồn cung cấp Thông và Quang</div>
+	</div>
+	<div id="back-top">
+		<a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+	</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+<script src="./script.js"></script>
+</html>

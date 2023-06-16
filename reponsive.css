@@ -1,0 +1,133 @@
+@media (max-width: 1200px){
+   .group-accout li {
+      float: left;
+      margin-right: 7px;
+   }
+}
+@media (max-width: 992px){
+.section_intro .col-intro-1 {
+    order: 1;
+    text-align: center;
+}
+.section_intro  .img_intro_list{
+    display: none;
+ }
+ .top_header{
+   display: none;
+ }
+ .search_header {
+   order: 2;
+   margin-bottom: 50px;
+ }
+ .logo_header{
+   display: none;
+ }
+ .header_right{
+    display: flex;
+    width: 100% !important;
+    order: 1;
+ }
+ .group-accout li.phone-head{
+  display: none;
+}
+ .site-nav {
+  display: none;
+}
+.nav__bar-btn{
+   display: block;
+ }
+ .logo_hidden{
+     display: block;
+ }
+.header img{
+   max-width: 80%;
+}
+.nav__bar-btn img{
+   max-width: 70%;
+}
+.user{
+   display: none;
+}
+.group-accout .icon_ {
+   height: 45px;
+   width: 45px;
+   line-height: 45px;
+   font-size: 18px;
+   padding-top: 0px;
+}
+.cart-quantity {
+   position: absolute;
+   top: 5px;
+   right: 7px;
+   padding: 0px 3px;
+   border-radius: 50%;
+   line-height: 16px;
+   font-size: 13px;
+}
+.search_header input {
+   height: 45px;
+   min-height: 45px;
+   line-height: 45px;
+   padding: 0 25px 0 20px;
+   border-radius: 24px !important;
+   font-size: 14px;
+}
+.search_logo {
+   position: absolute;
+   right: 17px;
+   height: 41px;
+   width: 41px;
+   top: 2px;
+   line-height: 40px;
+   font-size: 17px;
+}
+.group-accout{
+  float: right;
+}
+.menu-scroll-down2{
+   position: fixed;
+   width: 100%;
+   height: 155px;
+   top:0px;
+   z-index: 9999;
+   color: #636363;
+   background-color: #fff;
+   overflow-y: hidden;
+   padding: 10px 0 0 0 !important;
+}
+.section_category {
+   margin-top: 25px;
+}
+.section_category .cate-item {
+   width: 80px;
+   height: 80px;
+}
+.section_category .cate-item .image:before {
+   content: none;
+}
+.section_category .cate-item:hover .hiden {
+   display: none;
+}
+.section_tab_product .nav-tab li {
+   display: inline-block;
+   margin-right: 25px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding: 0px;
+   padding-bottom: 10px;
+   border: 0;
+   border-radius: 0;
+}
+}
+@media (max-width: 768px){
+    
+}
+@media (max-width: 650px){
+
+}
+@media(max-width: 480px){
+
+}
+@media (max-width: 320px){
+   
+}
