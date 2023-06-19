@@ -1,32 +1,69 @@
+//---------------MENU-SCROLL-DOWN-----------------
+const back_color_menu = document.querySelector('.site-nav');
+const back_color_menu2 = document.querySelector('.middle-header');
+const back_color_menu3 = document.querySelector('.drop-account');
+const slider = document.querySelector('.home');
+const slider2 = document.querySelector('.login-header');
+const slider3 = document.querySelector('.section_category');
+const slider4 = document.querySelector('.body');
 
-const slides2 = document.querySelector('.slides');
-			const slideWidth = document.querySelector('.slide').offsetWidth;
-			let currentSlide = 0;
-	
-			function showSlide() {
-				slides2.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-			}
-	
-			function previousSlide() {
-				if (currentSlide > 0) {
-					currentSlide--;
-				} else {
-					currentSlide = 4;
-				}
-				showSlide();
-			}
-	
-			function nextSlide() {
-				if (currentSlide < 4) {
-					currentSlide++;
-				} else {
-					currentSlide = 0;
-				}
-				showSlide();
-			}
+window.addEventListener('scroll', function() {
+const sliderRect = slider.getBoundingClientRect();
+const windowHeight = window.innerHeight;
+const scrollPosition = window.scrollY;
+if (sliderRect.bottom <= windowHeight && scrollPosition >= sliderRect.top) {
+  down();
+} else {
+up();
+}
+});
+window.addEventListener('scroll', function() {
+  const sliderRect2 = slider2.getBoundingClientRect();
+  const windowHeight2 = window.innerHeight;
+  const scrollPosition2 = window.scrollY;
+  if (sliderRect2.bottom <= windowHeight2 && scrollPosition2 >= sliderRect2.top) {
+    down();
+  } else {
+up();
+  }
+  });
+function down() {
+back_color_menu.classList.add('menu-scroll-down');
+back_color_menu2.classList.add('menu-scroll-down2');
+back_color_menu3.classList.add('menu-scroll-down3');
+document.getElementById('header-nav').style.background='#fff';
+document.getElementById('header-nav').style.color='#636363';
 
-// danhgia--------------------------------
-
+}
+if (window.innerWidth < 992) {
+  window.addEventListener('scroll', function() {
+    const sliderRect3 = slider3.getBoundingClientRect();
+    const windowHeight3 = window.innerHeight;
+    const scrollPosition3 = window.scrollY;
+    if (sliderRect3.bottom <= windowHeight3 && scrollPosition3 >= sliderRect3.top) {
+      down();
+    } else {
+  up();
+    }
+    });
+    window.addEventListener('scroll', function() {
+      const sliderRect4 = slider4.getBoundingClientRect();
+      const windowHeight4 = window.innerHeight;
+      const scrollPosition4 = window.scrollY;
+      if (sliderRect4.bottom <= windowHeight4 && scrollPosition4 >= sliderRect4.top) {
+        down();
+      } else {
+    up();
+      }
+      });
+}
+function up() {
+back_color_menu.classList.remove('menu-scroll-down');
+back_color_menu2.classList.remove('menu-scroll-down2');
+back_color_menu3.classList.remove('menu-scroll-down3');
+document.getElementById('header-nav').style.background='#339538';
+document.getElementById('header-nav').style.color='#fff';
+}
 
 //--------------LOC SAN PHAM-------------
 function changeProductList(type, element) {
@@ -98,78 +135,8 @@ function changeProductList(type, element) {
            break;
     }
 }
-//--------------END LOC SAN PHAM-------------
 
-
-//---------------SITE-NAV------------------
-		const back_color_menu = document.querySelector('.site-nav');
-		const back_color_menu2 = document.querySelector('.middle-header');
-		const back_color_menu3 = document.querySelector('.drop-account');
-		const slider = document.querySelector('.home');
-    const slider2 = document.querySelector('.login-header');
-    const slider3 = document.querySelector('.section_category');
-    const slider4 = document.querySelector('.body');
-	
-	  window.addEventListener('scroll', function() {
-		const sliderRect = slider.getBoundingClientRect();
-		const windowHeight = window.innerHeight;
-		const scrollPosition = window.scrollY;
-		if (sliderRect.bottom <= windowHeight && scrollPosition >= sliderRect.top) {
-		  down();
-		} else {
-	up();
-		}
-	  });
-    window.addEventListener('scroll', function() {
-      const sliderRect2 = slider2.getBoundingClientRect();
-      const windowHeight2 = window.innerHeight;
-      const scrollPosition2 = window.scrollY;
-      if (sliderRect2.bottom <= windowHeight2 && scrollPosition2 >= sliderRect2.top) {
-        down();
-      } else {
-    up();
-      }
-      });
-	  function down() {
-		back_color_menu.classList.add('menu-scroll-down');
-		back_color_menu2.classList.add('menu-scroll-down2');
-		back_color_menu3.classList.add('menu-scroll-down3');
-		document.getElementById('header-nav').style.background='#fff';
-		document.getElementById('header-nav').style.color='#636363';
-		
-	  }
-    if (window.innerWidth < 992) {
-      window.addEventListener('scroll', function() {
-        const sliderRect3 = slider3.getBoundingClientRect();
-        const windowHeight3 = window.innerHeight;
-        const scrollPosition3 = window.scrollY;
-        if (sliderRect3.bottom <= windowHeight3 && scrollPosition3 >= sliderRect3.top) {
-          down();
-        } else {
-      up();
-        }
-        });
-        window.addEventListener('scroll', function() {
-          const sliderRect4 = slider4.getBoundingClientRect();
-          const windowHeight4 = window.innerHeight;
-          const scrollPosition4 = window.scrollY;
-          if (sliderRect4.bottom <= windowHeight4 && scrollPosition4 >= sliderRect4.top) {
-            down();
-          } else {
-        up();
-          }
-          });
-    }
-	  function up() {
-		back_color_menu.classList.remove('menu-scroll-down');
-		back_color_menu2.classList.remove('menu-scroll-down2');
-		back_color_menu3.classList.remove('menu-scroll-down3');
-		document.getElementById('header-nav').style.background='#339538';
-		document.getElementById('header-nav').style.color='#fff';
-	  }
-//------------------END-SITE-NAV------------------
-
-//--------------FAVOURITE-------------
+//--------------YEU THICH SAN PHAM-------------
 var favoriteButtons = document.querySelectorAll('.favorite-button');
 var notification = document.querySelector('.notification');
 favoriteButtons.forEach(function (button) {
@@ -198,38 +165,19 @@ function showNotification(message) {
     notification.classList.remove('show');
   }, 3000);
 }
-//--------------END FAVOURITE-------------
 
 
 
-//--------------POPUP-------------
+
+//--------------XEM NHANH-------------
 		function openForm(formId) {
 			document.getElementById(formId).style.display = "block";
 		}
 		function closeForm(formId) {
 			document.getElementById(formId).style.display = "none";
 		}
-//--------------END POPUP-------------
 
-
-
-//--------------BACK TO TOP-------------
-let mybutton = document.getElementById("back-top");
-window.onscroll = function () { scrollFunction() };
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-//--------------END BACK TO TOP-------------
-
-// open cart modal
+//--------------THÊM GIỎ HÀNG-------------
 const cart = document.querySelector('#cart');
 const cartModalOverlay = document.querySelector('.cart-modal-overlay');
 
@@ -288,7 +236,7 @@ function addItemToCart (price, imageSrc) {
         <img class="col-2 cart-image" src="${imageSrc}" alt="">
         <span class ="col-3 cart-price">${price}</span>
         <input class="col-1 product-quantity" type="number" value="1">
-        <button class="col-2 remove-btn">Remove</button>
+        <button class="col-2 remove-btn">Xóa</button>
         </div>
         
       `
@@ -359,10 +307,46 @@ function purchaseBtnClicked () {
   updateCartPrice()
 }
 
+//--------------DANH GIA-------------
+const slides2 = document.querySelector('.slides');
+			const slideWidth = document.querySelector('.slide').offsetWidth;
+			let currentSlide = 0;
+	
+			function showSlide() {
+				slides2.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+			}
+	
+			function previousSlide() {
+				if (currentSlide > 0) {
+					currentSlide--;
+				} else {
+					currentSlide = 4;
+				}
+				showSlide();
+			}
+	
+			function nextSlide() {
+				if (currentSlide < 4) {
+					currentSlide++;
+				} else {
+					currentSlide = 0;
+				}
+				showSlide();
+			}
 
 
-
-
-
-
+//--------------BACK TO TOP-------------
+let mybutton = document.getElementById("back-top");
+window.onscroll = function () { scrollFunction() };
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
