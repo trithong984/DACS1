@@ -261,6 +261,7 @@ for (var i = 0; i < addToCartButtons.length; i++) {
   button.addEventListener('click', addToCartClicked);
 }
 
+
 function addToCartClicked(event) {
   const button = event.target;
   const cartItem = button.parentElement;
@@ -354,7 +355,6 @@ function purchaseBtnClicked () {
  var cartItems = document.getElementsByClassName('product-rows')[0]
  while (cartItems.hasChildNodes()) {
    cartItems.removeChild(cartItems.firstChild)
-   
  }
   updateCartPrice()
 }
