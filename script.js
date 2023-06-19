@@ -1,10 +1,10 @@
 
-const slides = document.querySelector('.slides');
+const slides2 = document.querySelector('.slides');
 			const slideWidth = document.querySelector('.slide').offsetWidth;
 			let currentSlide = 0;
 	
 			function showSlide() {
-				slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+				slides2.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
 			}
 	
 			function previousSlide() {
@@ -24,6 +24,7 @@ const slides = document.querySelector('.slides');
 				}
 				showSlide();
 			}
+
 // danhgia--------------------------------
 
 
