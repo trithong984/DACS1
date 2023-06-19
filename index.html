@@ -4,15 +4,14 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Nhà của Thông</title>
+	<title>Cửa Hàng Q&T</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="reponsive.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"rel="stylesheet">
 	<link href="https://fonts.cdnfonts.com/css/shelline" rel="stylesheet">
 	<link rel="preload" as='style' type="text/css"
 		href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;900&display=swap">
@@ -76,7 +75,7 @@
 								<img src="./image/logo_header.png">
 							</a>
 						</div>
-						<div class="col-xl-12 col-lg-12 col-4 group-accoutfirst">
+						<div class="col-xl-12 col-lg-12 col-4  group-accoutfirst">
 							<ul class="group-accout">
 								<li class="phone-head">
 									<span class="icon-phone-header"> <i class="fa fa-phone"></i></span>
@@ -91,11 +90,10 @@
 										<a href="./login/login.html">Đăng nhập</a>
 										<a href="./signup/signup.html" class="border_login">Đăng ký</a>
 									</div>
-								
 								</li>
-								<li class="cart-header">
+								<li id="cart" class="cart-header">
 									<span class="icon_">
-										<i id="cart" class="fa-solid fa-cart-shopping"></i>
+										<i  class="fa-solid fa-cart-shopping"></i>
 										<span class ="cart-quantity">0</span></span>
 									</li>
 							</ul>
@@ -144,7 +142,7 @@
 		<div class="home" id="home">
 			<span class="title-header">
 				<h1>Thực Phẩm Sạch </h1>
-				<h2> đến từ nhà của Thông </h2>
+				<h2> đến từ Q&T team</h2>
 			</span>
 		</div>
 		<section class="section_category">
@@ -267,7 +265,7 @@
 								<span>Các thực phẩm tươi - sạch</span>
 							</h2>
 							<div class="contentpage">
-								Cửa hàng <b class="color_main">thực phẩm sạch</b> là một website cung cấp thực phẩm an
+								Cửa hàng <b class="color_main">Thực phẩm sạch Q&T Team</b> là một website cung cấp thực phẩm an
 								toàn, nông
 								sản sạch cho người dân. Với mong muốn mang tới mọi gia đình những thực phẩm an toàn nhất
 								trước
@@ -337,8 +335,27 @@
 						</div>
 					</div>
 				</div>
+				<div class="col-4 nav_hidden1">
+					<input type="checkbox" class='nav__input1' name="" id="nav__input1">		
+					<label for="nav__input1" class="nav__bar-btn1">
+						<i class="fa-solid fa-align-right"></i>
+					</label>			
+					<nav  class="nav__mobile1">
+					  <ul class="nav__mobile-list1">
+						<li><a onclick="changeProductList('noibat',this)" class="tabtitle1 current1">Nổi bật</a></li>
+						<li><a  onclick="changeProductList('traicay',this)" class="tabtitle1">Trái cây</a></li>
+						<li><a  onclick="changeProductList('cuqua',this)" class="tabtitle1">Củ quả</a></li>
+						<li><a  onclick="changeProductList('rau',this)" class="tabtitle1">Rau</a></li>
+						<li><a  onclick="changeProductList('hat',this)" class="tabtitle1">Hạt</a></li>
+						<li><a  onclick="changeProductList('thucpham',this)" class="tabtitle1">Thực phẩm</a></li>
+					  </ul>
+					  <label for="nav__input1" class="nav__mobile-btn1">
+						<i  class="fas fa-times"></i>
+					  </label>
+					</nav>
+				</div>
 				<div id="noibat" class="row">
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="chuoinammy">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="chuoinammy">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -370,7 +387,7 @@
 							<button class="add-to-cart">Add to cart</button>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="taomy">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="taomy">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -403,7 +420,7 @@
 							<button class="add-to-cart">Add to cart</button>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="cachuabi">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="cachuabi">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -435,7 +452,7 @@
 							<div class="add-to-cart">Add to cart</div>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="raucanhxanh">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="raucanhxanh">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -462,7 +479,7 @@
 							<div class="add-to-cart">Add to cart</div>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="thitlon">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="thitlon">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -494,7 +511,7 @@
 							<div class="add-to-cart">Add to cart</div>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="suplotrang">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="suplotrang">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -526,7 +543,7 @@
 							<div class="add-to-cart">Add to cart</div>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="namrom">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="namrom">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -558,7 +575,7 @@
 							<div class="add-to-cart">Add to cart</div>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="duachuothailan">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="duachuothailan">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -587,7 +604,7 @@
 					</div>
 				</div>
 				<div id="cuqua" class="row">
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="namrom">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="namrom">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -619,7 +636,7 @@
 							<div class="add-to-cart">Add to cart</div>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="duachuotthailanh">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="duachuotthailanh">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -646,7 +663,7 @@
 							<div class="add-to-cart">Add to cart</div>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="chanhxanh">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="chanhxanh">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -678,7 +695,7 @@
 							<div class="add-to-cart">Add to cart</div>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="hanhtaydo">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="hanhtaydo">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -705,7 +722,7 @@
 							<div class="add-to-cart">Add to cart</div>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="cachuabi">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="cachuabi">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -739,7 +756,7 @@
 					</div>
 				</div>
 				<div id="rau" class="row">
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="suplotrang">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="suplotrang">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -771,7 +788,7 @@
 							<div class="add-to-cart">Add to cart</div>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="raucaixanh">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="raucaixanh">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -803,7 +820,7 @@
 							<div class="add-to-cart">Add to cart</div>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="xalach">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="xalach">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -832,7 +849,7 @@
 					</div>
 				</div>
 				<div id="thucpham" class="row">
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="thitlon">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="thitlon">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -864,7 +881,7 @@
 							<div class="add-to-cart">Add to cart</div>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="tombien">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="tombien">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -896,7 +913,7 @@
 							<div class="add-to-cart">Add to cart</div>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="cahoi">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="cahoi">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -928,7 +945,7 @@
 							<div class="add-to-cart">Add to cart</div>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="cuabe">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="cuabe">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -960,7 +977,7 @@
 							<div class="add-to-cart">Add to cart</div>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="mucthanhhoa">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="mucthanhhoa">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -992,7 +1009,7 @@
 							<div class="add-to-cart">Add to cart</div>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="thitbo">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="thitbo">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -1026,7 +1043,7 @@
 					</div>
 				</div>
 				<div id="hat" class="row">
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="hatoccho">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="hatoccho">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -1058,7 +1075,7 @@
 							<div class="add-to-cart">Add to cart</div>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="hatdieukho">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="hatdieukho">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -1090,7 +1107,7 @@
 							<div class="add-to-cart">Add to cart</div>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="hatdauxanh">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="hatdauxanh">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -1117,7 +1134,7 @@
 							<div class="add-to-cart">Add to cart</div>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="hathanhnhan">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="hathanhnhan">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -1149,7 +1166,7 @@
 							<div class="add-to-cart">Add to cart</div>
 						</div>
 					</div>
-					<div class="col-xl-3 col-lg-4 col-sm-6" title="hatdieutrang">
+					<div class="col-xl-3 col-lg-4 col-sm-6 col-xs-6" title="hatdieutrang">
 						<div class="product-box product-block-item">
 							<div class="product-thumbnail">
 								<a class="image_thumb product-transition" href="#">
@@ -1616,6 +1633,7 @@
 				</div>
 			</div>
 		</div>
+				</div>
 	</section>
 	<div class="list-popup">
 		<div id="chuoinammy" class="quickview_overlay">
@@ -1697,10 +1715,11 @@
 										<input type="text" value="1">
 										<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
 									</div>
-									<button type="submit" class="add_to_cart">
+									<!-- <button type="submit" class="add_to_cart">
 										<span class="btn-content">Cho vào giỏ</span>
 										<span class="regular">Thêm vào giỏ để chọn tiếp</span>
-									</button>
+									</button> -->
+									<button class="add-to-cart add-to-cart2">add to cart</button>
 								</div>
 								<div class="col-5 source">
 									<span class="title_source">Quét mã sản phẩm </span>
@@ -3866,53 +3885,69 @@
 	</section>
 	<div class="danhgia">
 		<div class="slider">
-			<div class="slider-container">
-			  <div class="slide">
-				<div class="swiper">
-					<span class="dau"><i class="fa-solid fa-quote-left"></i></span>
-					<p class="eva">Tôi hài lòng với sản phẩm ở đây. Tôi đánh giá cao đội ngũ chăm sóc khách hàng luôn tận tình và tư vấn những sản phẩm phù hợp.</p>
-					<div class="name"> Lê Quang</div>
-					<p class="job">Lập trình viên</p>
-				</div> 
-				<div class="myswiper">
-					<img src="./image/danhgia1.jpg" alt="">
-				 </div>
-			  </div>
-			 
-			 
+			<div class="slides">
+				<div class="slide slide-1">
+					<div class="swiper">
+						<span class="dau"><i class="fa-solid fa-quote-left"></i></span>
+						<p class="eva">Mỗi sản phẩm được mô tả chi tiết, bao gồm hình ảnh, mô tả, hướng dẫn bảo quản và đánh giá từ người dùng. Điều này giúp người dùng có cái nhìn rõ ràng về sản phẩm trước khi đặt mua</p>
+						<div class="name"> Lê Quang</div>
+						<p class="job">Lập trình viên</p>
+					</div>
+					<div class="myswiper">
+						<img src="./image/banner_1.png" alt="">
+					</div>
+				</div>
+				<div class="slide slide-2">
+					<div class="swiper">
+						<span class="dau"><i class="fa-solid fa-quote-left"></i></span>
+						<p class="eva">FRESHFOOD có giao diện người dùng hấp dẫn và dễ sử dụng. Việc tìm kiếm sản phẩm và điều hướng trang web là dễ dàng, giúp người dùng tìm thấy những gì họ cần một cách thuận tiện.</p>
+						<div class="name"> Nguyễn Thanh Tiến</div>
+						<p class="job">Kiến trúc sư</p>
+					</div>
+					<div class="myswiper">
+						<img src="./image/banner_2.png" alt="">
+					</div>
+				</div>
+				<div class="slide slide-3">
+					<div class="swiper">
+						<span class="dau"><i class="fa-solid fa-quote-left"></i></span>
+						<p class="eva">Trang web này cung cấp một loạt các sản phẩm từ nhiều danh mục khác nhau. Người dùng có nhiều lựa chọn và khả năng tìm thấy sản phẩm phù hợp với nhu cầu của họ.</p>
+						<div class="name"> Nguyễn Tri Thông</div>
+						<p class="job">Thư ký</p>
+					</div>
+					<div class="myswiper">
+						<img src="./image/banner_1.png" alt="">
+					</div>
+				</div>
+				<div class="slide slide-4">
+					<div class="swiper">
+						<span class="dau"><i class="fa-solid fa-quote-left"></i></span>
+						<p class="eva">Tôi đã thử nhiều trang web bán thực phẩm sạch, nhưng trang web này thực sự là một điểm sáng. Sản phẩm chất lượng, giá cả hợp lý và đa dạng. Tôi cảm thấy tin tưởng về nguồn gốc và chất lượng của sản phẩm mình mua. Giao hàng cũng rất nhanh và đúng hẹn</p>
+						<div class="name"> Nguyễn Văn An</div>
+						<p class="job">Kỹ sư</p>
+					</div>
+					<div class="myswiper">
+						<img src="./image/banner_1.png" alt="">
+					</div>
+				</div>
+				<div class="slide slide-5">
+					<div class="swiper">
+						<span class="dau"><i class="fa-solid fa-quote-left"></i></span>
+						<p class="eva">Tôi là một người ưa chuộng thực phẩm sạch và mình đã tìm thấy trang web này. Tôi thật sự hài lòng với việc mua sắm ở đây. Họ có một loạt các sản phẩm hữu cơ, thực phẩm không chất bảo quản và không chất tạo màu.</p>
+						<div class="name"> Lê Thị Bình</div>
+						<p class="job">Thư ký</p>
+					</div>
+					<div class="myswiper">
+						<img src="./image/banner_1.png" alt="">
+					</div>
+				</div>
 			</div>
-		
-			<div class="slider-controls">
-			  <button id="prevBtn"><i class="fa-solid fa-angle-left"></i></button>
-			  <button id="nextBtn"> <i class="fa-solid fa-angle-right"></i></button>
-			</div>
-		  </div>
-		
-		  <script>
-			var sliderContainer = document.querySelector('.slider-container');
-			var prevBtn = document.querySelector('#prevBtn');
-			var nextBtn = document.querySelector('#nextBtn');
-			var slideWidth = document.querySelector('.slide').offsetWidth;
-			var currentIndex = 0;
-		
-			prevBtn.addEventListener('click', function() {
-			  if (currentIndex === 0) {
-				currentIndex = sliderContainer.childElementCount - 1;
-			  } else {
-				currentIndex--;
-			  }
-			  sliderContainer.style.transform = 'translateX(' + (-slideWidth * currentIndex) + 'px)';
-			});
-		
-			nextBtn.addEventListener('click', function() {
-			  if (currentIndex === sliderContainer.childElementCount - 1) {
-				currentIndex = 0;
-			  } else {
-				currentIndex++;
-			  }
-			  sliderContainer.style.transform = 'translateX(' + (-slideWidth * currentIndex) + 'px)';
-			});
-		  </script>
+		</div>
+	
+		<div class="slider-controls">
+			<button class="right-bt" onclick="previousSlide()"><i class="fa-solid fa-angle-left"></i></button>
+			<button class="left-bt" onclick="nextSlide()"><i class="fa-solid fa-angle-right"></i></button>
+		</div>
 	</div>
 	<div class="bot-body">
 		<h2><a href="">tin tức nông nghiệp</a> </h2>
@@ -3920,6 +3955,7 @@
 			<div class="row">
 				<div class="tintuc0 col-lg-4 col-md-6 col-sm-12">
 					<img src="./image/tintuc1.webp" alt="">
+					<img src="" alt="">
 					<div class="conten-blog">
 						<h4><a href="">Rau xanh tăng giá mạnh vì trời mưa, người dân nội thành lao đao</a></h4>
 					</div>
@@ -4086,7 +4122,7 @@
 		</div>
 		
 	</div>
-	<div class="end">Nguồn cung cấp Thông và Quang</div>
+	<div class="end">© Nguồn cung cấp Q&T Team</div>
 	</div>
 	<div id="back-top">
 		<a href="#top"><i class="fa-solid fa-arrow-up"></i></a>

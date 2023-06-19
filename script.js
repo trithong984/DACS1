@@ -1,3 +1,32 @@
+
+const slides = document.querySelector('.slides');
+			const slideWidth = document.querySelector('.slide').offsetWidth;
+			let currentSlide = 0;
+	
+			function showSlide() {
+				slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+			}
+	
+			function previousSlide() {
+				if (currentSlide > 0) {
+					currentSlide--;
+				} else {
+					currentSlide = 4;
+				}
+				showSlide();
+			}
+	
+			function nextSlide() {
+				if (currentSlide < 4) {
+					currentSlide++;
+				} else {
+					currentSlide = 0;
+				}
+				showSlide();
+			}
+// danhgia--------------------------------
+
+
 //--------------LOC SAN PHAM-------------
 function changeProductList(type, element) {
 
@@ -14,7 +43,7 @@ function changeProductList(type, element) {
             document.getElementById('cuqua').style.display='none';
             document.getElementById('rau').style.display='none';
             document.getElementById('thucpham').style.display='none';
-              document.getElementById('traicay').style.display='none';
+            document.getElementById('traicay').style.display='none';
             document.getElementById('hat').style.display='none';
             document.getElementById('gao').style.display='none';
            break;
@@ -210,9 +239,7 @@ cart.addEventListener('click', () => {
     cartModalOverlay.style.transform = 'translateX(-200%)';
   }
 })
-// end of open cart modal
 
-// close cart modal
 const closeBtn = document.querySelector ('#close-btn');
 
 closeBtn.addEventListener('click', () => {
@@ -224,27 +251,23 @@ cartModalOverlay.addEventListener('click', (e) => {
     cartModalOverlay.style.transform = 'translateX(-200%)'
   }
 })
-// end of close cart modal
 
-// add products to cart
-const addToCart = document.getElementsByClassName('add-to-cart');
+const addToCartButtons = document.querySelectorAll('.add-to-cart');
 const productRow = document.getElementsByClassName('product-row');
 
-for (var i = 0; i < addToCart.length; i++) {
-  button = addToCart[i];
-  button.addEventListener('click', addToCartClicked)
+for (var i = 0; i < addToCartButtons.length; i++) {
+  const button = addToCartButtons[i];
+  button.addEventListener('click', addToCartClicked);
 }
 
-function addToCartClicked (event) {
-  button = event.target;
-  var cartItem = button.parentElement;
-  var price = cartItem.getElementsByClassName('price-box')[0].innerText;
-  
-  var imageSrc = cartItem.getElementsByClassName('product-image')[0].src;
-  addItemToCart (price, imageSrc);
-  updateCartPrice()
+function addToCartClicked(event) {
+  const button = event.target;
+  const cartItem = button.parentElement;
+  const price = cartItem.querySelector('.price-box').innerText;
+  const imageSrc = cartItem.querySelector('.product-image').src;
+  addItemToCart(price, imageSrc);
+  updateCartPrice();
 }
-
 function addItemToCart (price, imageSrc) {
   var productRow = document.createElement('div');
   productRow.classList.add('product-row');
@@ -253,17 +276,17 @@ function addItemToCart (price, imageSrc) {
   
   for (var i = 0; i < cartImage.length; i++){
     if (cartImage[i].src == imageSrc){
-      alert ('This item has already been added to the cart')
+      alert ('Mặt hàng này đã có ở giỏ hàng')
       return;
     }
   }
   
   var cartRowItems = `
   <div class="product-row">
-        <img class="cart-image" src="${imageSrc}" alt="">
-        <span class ="cart-price">${price}</span>
-        <input class="product-quantity" type="number" value="1">
-        <button class="remove-btn">Remove</button>
+        <img class="col-2 cart-image" src="${imageSrc}" alt="">
+        <span class ="col-3 cart-price">${price}</span>
+        <input class="col-1 product-quantity" type="number" value="1">
+        <button class="col-2 remove-btn">Remove</button>
         </div>
         
       `
@@ -273,9 +296,7 @@ function addItemToCart (price, imageSrc) {
   productRow.getElementsByClassName('product-quantity')[0].addEventListener('change', changeQuantity)
   updateCartPrice()
 }
-// end of add products to cart
 
-// Remove products from cart
 const removeBtn = document.getElementsByClassName('remove-btn');
 for (var i = 0; i < removeBtn.length; i++) {
   button = removeBtn[i]
@@ -288,12 +309,12 @@ function removeItem (event) {
   updateCartPrice()
 }
 
-// update quantity input
-var quantityInput = document.getElementsByClassName('product-quantity')[0];
 
-for (var i = 0; i < quantityInput; i++){
-  input = quantityInput[i]
-  input.addEventListener('change', changeQuantity)
+var quantityInputs = document.querySelectorAll('.product-quantity');
+
+for (var i = 0; i < quantityInputs.length; i++){
+  var input = quantityInputs[i];
+  input.addEventListener('change', changeQuantity);
 }
 
 function changeQuantity(event) {
@@ -303,9 +324,7 @@ function changeQuantity(event) {
   }
   updateCartPrice()
 }
-// end of update quantity input
 
-// update total price
 function updateCartPrice() {
   var total = 0
   for (var i = 0; i < productRow.length; i += 2) {
@@ -321,9 +340,7 @@ function updateCartPrice() {
 
 document.getElementsByClassName('cart-quantity')[0].textContent = i /= 2
 }
-// end of update total price
 
-// purchase items
 const purchaseBtn = document.querySelector('.purchase-btn');
 
 const closeCartModal = document.querySelector('.cart-modal');
@@ -331,7 +348,7 @@ const closeCartModal = document.querySelector('.cart-modal');
 purchaseBtn.addEventListener('click', purchaseBtnClicked)
 
 function purchaseBtnClicked () {
-  alert ('Thank you for your purchase');
+  alert ('Cảm ơn bạn đã thanh toán');
   cartModalOverlay.style.transform= 'translateX(-100%)'
  var cartItems = document.getElementsByClassName('product-rows')[0]
  while (cartItems.hasChildNodes()) {
@@ -340,3 +357,11 @@ function purchaseBtnClicked () {
  }
   updateCartPrice()
 }
+
+
+
+
+
+
+
+

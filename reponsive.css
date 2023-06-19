@@ -1,10 +1,40 @@
 @media (max-width: 1200px){
+   .section_tab_product{
+      margin-top: 30px;
+  }
+   .img_intro_list{
+      margin-left: -150px;
+      margin-top: 40px;
+      }
+   .home .title-header h1{
+      font-size: 120px;
+   }
+   .home .title-header h2{
+      font-size: 80px;
+   }
    .group-accout li {
       float: left;
       margin-right: 7px;
    }
+   .product-quantity {
+      margin-left: 2rem;
+    }
+    
+    .remove-btn {
+      margin-left: 3rem;
+    }
 }
-@media (max-width: 992px){
+@media (max-width: 991.98px){
+   .section_tab_product{
+      margin-top: 0px;
+  }
+   .add-to-cart {
+      right: 0;
+      top: 73%;
+    }
+   .cart-modal {
+      width: 100vw;
+    } 
 .section_intro .col-intro-1 {
     order: 1;
     text-align: center;
@@ -45,9 +75,7 @@
 .nav__bar-btn img{
    max-width: 70%;
 }
-.user{
-   display: none;
-}
+
 .group-accout .icon_ {
    height: 45px;
    width: 45px;
@@ -74,10 +102,10 @@
 }
 .search_logo {
    position: absolute;
-   right: 17px;
-   height: 41px;
-   width: 41px;
-   top: 2px;
+   right: 14px;
+   height: 43px;
+   width: 43px;
+   top: 1px;
    line-height: 40px;
    font-size: 17px;
 }
@@ -115,19 +143,68 @@
    margin-bottom: 0px;
    padding: 0px;
    padding-bottom: 10px;
-   border: 0;
    border-radius: 0;
 }
 }
-@media (max-width: 768px){
-    
+@media (max-width: 767.98px){
+   .home .title-header h2{
+      font-size: 55px;
+   }
+   .add-to-cart {
+      right: 0;
+      top: 66%;
+    }
+   .nav-tab1 {
+      display: none;
+    }
+    .nav__bar-btn1{
+       display: block;
+     }
+     .bg_module:before {
+     display: none;
+  }
+  .bg_module:after {
+   display: none;
+  }
+  .nav-tab{
+   display: none;
+  }
+  .section_3banner {
+   display: none;
 }
-@media (max-width: 650px){
-
 }
-@media(max-width: 480px){
-
+@media (max-width: 575.98px){
+   .section_tab_product .col-xs-6{
+      width: 80%;
+      margin: 0 auto;
+}
+.home .title-header h2{
+   font-size: 55px;
+}
+.home .title-header h1{
+   font-size: 105px;
+}
+}
+@media(max-width: 479.98px){
+   .home .title-header h2{
+     display: none;
+   }
+   .home .title-header h1{
+      font-size: 75px;
+   }
+   .logo_hidden{
+      display: none;
+   }
+   .header_right{
+      display: flex;
+      justify-content: space-between;
+   }
+   .group-accoutfirst{
+      width: 50% !important;
+   }
 }
 @media (max-width: 320px){
-   
+   .home .title-header h1{
+      font-size: 55px;
+   }
 }
