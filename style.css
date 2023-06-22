@@ -764,6 +764,9 @@ display: none;
     border: 2px solid #339538;
     color: #fff !important;
 }
+.product-name:hover{
+    color: #339538;
+}
 .quick_view_product {
     position: fixed;
     width: 950px;

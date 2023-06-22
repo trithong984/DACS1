@@ -1,0 +1,244 @@
+.login-header {
+    align-items: center;
+    justify-content: center;
+    background: url("../image/bg_breadcrumb.png");
+    background-position: center;
+    background-size: cover;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
+    text-align: center;
+    margin-top: -50px;
+    z-index: -1 ;
+}
+.input_number .num_1 {
+    overflow-y: hidden;
+}
+.input_number .num_2 {
+    overflow-y: hidden;
+}
+.trangchu{
+color: #fff !important;
+}
+.login-header span{
+    color: #fff;
+    font-size: 16px;
+}
+.login-header .dau{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 15px;
+}
+.login-header a{
+    color: #339538;
+    font-size: 16px;
+    font-weight: 700;
+}
+.login-header h4{
+    font-weight: 800;
+    font-size: 26px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Mulish",sans-serif;
+    padding: 10px;
+}
+
+.bot-sidebar {
+    margin-top: 30px;
+}
+.sidebar p{
+    font-size: 22px !important;
+    font-weight: 600;
+}
+.sidebar .sidebara{
+    padding: 13px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.sidebar a{
+    color: #494949;
+    font-size: 16px;
+}
+.sidebar a:hover{
+    color: #339538;
+}
+.content-body p{
+    font-size: 22px;
+    font-weight: 600;
+}
+#slider {
+    width: 80%;
+    margin-bottom: 20px;
+  } 
+  .body-ngoai{
+    height:  90vh;
+    background-color: #ffffff;
+    max-width: 1060px;
+    margin: 70px auto;
+    
+    display: flex;
+    font-family: "Mulish",sans-serif;
+    
+  }
+  .body{
+    width: 600px;
+    height: 49%;
+    /* margin: 0 auto; */
+    display: flex;
+    
+}
+.main{
+    width: 80%;
+    margin-left: 5px;
+    position: relative;
+}
+.list-image{
+    width: 15%;
+    height: 100%; /* Đặt chiều cao của thẻ div */
+  display: flex;
+  flex-direction: column;
+}
+.list-image div{
+    height: 25%; /* Đặt chiều cao của ảnh là 25% */
+    width: auto;
+    padding: 3px;
+}
+.img-feature{
+position: relative;
+}
+.list-image img{
+    height: 100%;
+    width: 100%;
+    border: solid 1px rgb(233, 231, 227);
+}
+.main img{
+    border: solid 1px rgb(233, 231, 227);
+    height: 100%;
+    width: 100%;
+   
+}
+.active2{
+   background-color: #339538;
+}
+.control{
+    position: absolute;
+    font-size: 20px;
+    color:  #339538;
+    transform: translateX(50%);
+    border: none;
+    right: 50%;
+}
+.prev{
+   top: 10px;
+    transform: rotate(90deg);
+}
+.next{
+    bottom: 10px;
+    transform: rotate(90deg);
+}
+.body2{
+    margin-left: 20px;
+    overflow-y: hidden;
+}
+.thuonghieu span{
+    padding-right:20px;
+}
+.gia{
+    padding-top: 20px ;
+    padding-bottom: 20px ;
+}
+.gia span{
+    padding-right:  20px;
+}
+.gia .price-box{
+    font-size: 25px;
+    font-weight: 700;
+    color: #339538;
+}
+.gia .giamgia{
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: #ff0101;
+    padding: 0.5px 5.5px;
+    border-radius: 4px;
+}
+.gia .compare-price{
+    color: #8c8c8c;
+    font-size: 19px;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+.soluong1{
+    border-top: solid 1px rgb(233, 231, 227);
+    border-bottom: solid 1px rgb(233, 231, 227);
+    padding: 25px 0;
+}
+.ttsp{
+    padding: 20px 0;
+}
+.ttsp1{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.bt{
+    display: flex;
+}
+
+.add_to_cart{
+    margin-right: 15px;
+    width: 220px !important;
+}
+.add_to_cart2{
+    background: #fff3d1;
+    color: #ff5c00;
+    border: 1px solid #ff5c00;
+    border: initial;
+    height: 74px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: normal;
+    position: relative;
+    border-radius: 8px;
+    float: left;
+    width: 220px;
+    margin-top: 20px;
+}
+.regular{
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: none;
+    line-height: normal;
+    display: block;
+}
+.mtsp {
+    max-width: 1060px;
+    margin: 0 auto;
+}
+.container1 {
+    max-height: 100px;
+    overflow: hidden;
+  }
+  
+  .content1 {
+    padding-bottom: 0;
+  }
+  
+  .toggle-button {
+    display: none;
+    width: 120px;
+    height: 35px;
+    border: solid 1px rgb(240, 235, 235);
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .sptt{
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+  .sptt h4{
+    padding-bottom: 30px;
+  }

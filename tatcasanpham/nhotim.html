@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nho tím</title>
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.cdnfonts.com/css/shelline" rel="stylesheet">
+	<link rel="preload" as='style' type="text/css"
+		href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;900&display=swap">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="svn-artful-beauty.ttf">
+</head>
+
+<body>
+	<header class="header">
+		<div class="top_header">
+			<img class="lazyload" src="../image/imghead.png" />
+		</div>
+		<div class="middle-header">
+			<div class="container">
+				<div class="list_middle">
+					<div class="row">
+						<div class="col-xl-4 col-lg-4 col-12 search_header">
+							<input type="text" class="search-auto" placeholder="Tìm sản phẩm">
+							<button class="btn" type="submit"></button>
+							<span class="search_logo"><i class="fa-solid fa-magnifying-glass"></i></span>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-12 logo_header">
+							<a href="../index.html">
+								<img src="../image/logo_header.png">
+							</a>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-12 header_right">
+							<div class="col-4 nav_hidden">
+								<input type="checkbox" class='nav__input' name="" id="nav__input">
+								<label for="nav__input" class="nav__bar-btn">
+									<img id="menubar1"
+										src="https://bizweb.dktcdn.net/100/316/047/themes/894743/assets/menu-bar-2.png?1676255300327">
+								</label>
+								<nav class="nav__mobile">
+									<ul class="nav__mobile-list">
+										<li><a href="../index.html" class="nav__mobile-link active">Trang chủ</a></li>
+										<li><a href="#gioithieu" class="nav__mobile-link">Giới thiệu</a></li>
+										<li><a href="#sanpham" class="nav__mobile-link">Sản phẩm</a></li>
+										<li><a href="#tintuc" class="nav__mobile-link">Tin tức</a></li>
+										<li><a href="#lienhe" class="nav__mobile-link">Liên hệ</a></li>
+									</ul>
+									<label for="nav__input" class="nav__mobile-btn">
+										<img id="menubar1"
+											src="https://bizweb.dktcdn.net/100/316/047/themes/894743/assets/menu-bar-2.png?1676255300327">
+									</label>
+								</nav>
+							</div>
+							<div class="col-4 logo_hidden">
+								<a href="#">
+									<img src="../image/logo_header.png">
+								</a>
+							</div>
+							<div class="col-xl-12 col-lg-12 col-4 group-accoutfirst">
+								<ul class="group-accout">
+									<li class="phone-head">
+										<span class="icon-phone-header"> <i class="fa fa-phone"></i></span>
+										<div class="content_s">
+											<p class=bold_>Hỗ trợ</p>
+											<a class="fone">1900 6750</a>
+										</div>
+									</li>
+									<li class="user">
+										<span class="icon_"><i class="fa-regular fa-user"></i></span>
+										<div class="drop-account">
+											<a href="../login/login.html">Đăng nhập</a>
+											<a href="../signup/signup.html">Đăng ký</a>
+										</div>
+
+									</li>
+									<li class="cart-header">
+										<span class="icon_">
+											<i id="cart" class="fa-solid fa-cart-shopping"></i>
+											<span class="cart-quantity">0</span></span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="site-nav">
+			<nav id="header-nav" class="header-nav">
+				<ul class="item_big">
+					<li class="nav-item active ">
+						<a class="a-img active" href="../index.html">
+							Trang chủ
+						</a>
+					</li>
+					<li class="nav-item ">
+						<a class="a-img" href="#gioithieu">
+							Giới thiệu
+						</a>
+					</li>
+					<li class="nav-item  ">
+						<a class="a-img" href="#sanpham">
+							Sản phẩm
+						</a>
+					</li>
+					<li class="nav-item ">
+						<a class="a-img" href="#baoquan">
+							Bảo quản
+						</a>
+					</li>
+					<li class="nav-item ">
+						<a class="a-img" href="#tintuc">
+							Tin tức
+						</a>
+					</li>
+					<li class="nav-item ">
+						<a class="a-img" href="#lienhe">
+							Liên hệ
+						</a>
+					</li>
+			</nav>
+		</div>
+		<div class="login-header">
+			<h4>Sản phẩm nổi bật</h4>
+			<span class="trangchu">Trang chủ</span>
+			<span class="dau"><i class="fa-solid fa-angle-right"></i></span>
+			<span><a href="">Nho tím</a></span>
+
+		</div>
+	</header>
+	<div class="body-ngoai">
+		<div class="body">
+			<div class="list-image">
+				<div><img src="../image/nhotim.png" alt=""></div>
+                <div><img src="../image/nhotim1.png" alt=""></div>
+                <div><img src="../image/nhotim2.png" alt=""></div>
+                <div><img src="../image/nhotim3.png" alt=""></div>
+				
+
+			</div>
+			<div class="main">
+				<img src="../image/chuoi1.png" alt="" class="img-feature">
+				<div class="control prev"><i class="fa-solid fa-angle-left"></i></div>
+				<div class="control next"><i class="fa-solid fa-angle-right"></i></div>
+			</div>
+		</div>
+		<div class="body2">
+
+			<h2>Nho tím</h2>
+			<div class="thuonghieu"> <b>Thương hiệu: </b>
+				<span>Vinmart</span>
+				<b>Tình trạng:</b>
+				<span>Còn hàng</span>
+			</div>
+			<div class="gia">
+				<span class="price-box">
+					215.000₫/kg</span>
+				
+			<span class="compare-price">250.000₫/kg</span>	
+				<span class="giamgia">-14%</span>
+			</div>
+			<div class=" soluong1">
+				<label class="sl section">Số lượng:</label>
+				<div class="input_number">
+					<a class="btn_num num_1"><i class="fa-solid fa-minus"></i></a>
+					<input type="text" value="1">
+					<a class="btn_num num_2"><i class="fa-solid fa-plus"></i></a>
+				</div>
+			
+			</div>
+			<div class="ttsp">
+				<p class="ttsp1">Thông tin sản phẩm:</p>
+				<p> - Nho tím (Grapes)<br>
+                    - Hương vị: ngọt, mượt mà và có một chút hương thơm<br>
+                    - Đóng gói: 1kg/hộp. <br>
+                    - Bảo quản: Nho tím có thể được bảo quản trong ngăn mát của tủ lạnh</p>
+			</div>
+			<div class="bt">
+				<button type="submit" class="add_to_cart">
+					<span class="btn-content">Mua ngay</span>
+					<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+				</button>
+				<button type="submit" class="add_to_cart2">
+					<span class="btn-content">Cho vào giỏ</span>
+					<span class="regular">Thêm vào giỏ để chọn tiếp</span>
+				</button>
+			</div>
+
+
+		</div>
+	</div>
+	<div class="mtsp">
+		<h2>Mô tả sản phẩm</h2>
+		<div class="container1">
+			<div class="content1">
+				<p> Nho tím, hay còn được gọi là nho màu tím, là một loại trái cây nhỏ, màu sắc đặc trưng và hương vị độc đáo. Nho tím có vỏ mỏng, màu tím hoặc tím đen và có hạt bên trong. Chúng được trồng và tiêu thụ rộng rãi trên khắp thế giới và được sử dụng trong nhiều món ăn và đồ uống.</p>
+				<p>Nho tím chứa nhiều chất chống oxy hóa, như resveratrol, quercetin và anthocyanin, có khả năng bảo vệ cơ thể khỏi tổn thương gây ra bởi các gốc tự do. Các chất chống oxy hóa này có thể giúp giảm nguy cơ mắc các bệnh tim mạch, bệnh ung thư và bệnh lão hóa. Ngoài ra, nho tím cũng giúp tăng cường hệ miễn dịch và có tác dụng chống viêm.</p>
+				<p>Nho tím cung cấp một lượng lớn vitamin C, vitamin K và chất xơ. Vitamin C là một chất chống oxy hóa quan trọng, giúp tăng cường hệ miễn dịch, duy trì sức khỏe da và thúc đẩy quá trình lành vết thương. Vitamin K là chất cần thiết cho quá trình đông máu và duy trì sức khỏe xương. Chất xơ giúp duy trì sự tiêu hóa khỏe mạnh, hỗ trợ quá trình giảm cân và duy trì cảm giác no lâu hơn.</p>
+				<p>Ngoài ra, nho tím cũng cung cấp các khoáng chất như kali, magiê và mangan, cần thiết cho nhiều chức năng cơ thể, bao gồm cân bằng nước và điện giữa các tế bào, hoạt động cơ bản của các cơ và thần kinh, và quá trình chuyển hóa chất dinh dưỡng.</p>
+                <p>Nho tím có thể được ăn tươi trực tiếp hoặc sử dụng trong nhiều món ăn và đồ uống. Chúng thường được dùng trong các món tráng miệng, mứt, nước ép, salad hoặc làm thành quả khô. Ngoài ra, nho tím cũng có thể được sử dụng để làm rượu vang</p>
+                <p>Tóm lại, nho tím là một loại trái cây giàu dinh dưỡng và có nhiều lợi ích cho sức khỏe. Việc thưởng thức nho tím đem lại hương vị thơm ngon và đồng thời cung cấp các chất chống oxy hóa, vitamin, chất xơ và khoáng chất quan trọng cho cơ thể.</p>
+			</div>
+			
+		  </div>
+		  <button class="toggle-button">Xem thêm </button>
+	</div>
+	<div class="sptt">
+		<div class="row">
+			<h4>Sản phẩm tương tự</h4>
+			<div class="col-xl-3 col-lg-4 col-sm-6" title="taomy">
+				<div class="product-box product-block-item">
+					<div class="product-thumbnail">
+						<a href="./tao.html" class="image_thumb product-transition" href="#">
+							<img class="product-image" src="../image/taomy.png">
+						</a>
+						<span class="smart">
+							<span>-14%
+							</span>
+						</span>
+					</div>
+					<div class="product-info">
+						<div class="product-content">
+							<h3 class="product-name"><a href="#">Táo Mỹ</a></h3>
+							<div class="blockprice">
+								<span class="price-box">
+									86.000₫<span class="kg">/kg</span></span>
+									<span class="compare-price">100.000₫/kg</span>
+							 </div>
+							</div>
+						</div>
+				
+					<div class="product-action">
+						<a onclick="openForm('taomy')" class="xem_nhanh btn-circle btn_view btn ">
+							<i class="fa-solid fa-eye"></i>
+						</a>
+						<a class="btn btn_view action favorite-button">
+							<i class="fa-regular fa-heart"></i>
+						</a>
+					</div>
+					<button class="add-to-cart">Add to cart</button>
+				</div>
+			</div>
+            <div class="col-xl-3 col-lg-4 col-sm-6" title="luudo">
+                <div class="product-box product-block-item">
+                    <div class="product-thumbnail">
+                        <a href="./luudo.html" class="image_thumb product-transition" href="#">
+                            <img class="product-image" src="../image/luudo.png">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-content">
+                            <h3 class="product-name"><a href="#">Lựu đỏ</a></h3>
+                            <div class="blockprice">
+                                <div class="price-box">
+                                    295.000₫ <span class="kg">/kg</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-action">
+                        <a onclick="openForm('luudo')" class="xem_nhanh btn-circle btn_view btn">
+                            <i class="fa-solid fa-eye"></i>
+                        </a>
+                        <a class="btn btn_view action favorite-button">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                    <div class="add-to-cart">Thêm vào giỏ hàng</div>
+                </div>
+            </div>
+			<div class="col-xl-3 col-lg-4 col-sm-6" title="raucanhxanh">
+				<div class="product-box product-block-item">
+					<div class="product-thumbnail">
+						<a href="./raucaibexanhnon.html" class="image_thumb product-transition" href="#">
+							<img class="product-image" src="../image/raucaixanh.png">
+						</a>
+					</div>
+					<div class="product-info">
+						<div class="product-content">
+							<h3 class="product-name"><a href="#">Rau cải bẹ xanh non</a></h3>
+							<div class="blockprice">
+								<span class="price-box">
+									25.000₫<span class="kg">/kg</span></span>
+							</div>
+						</div>
+					</div>
+					<div class="product-action">
+						<a onclick="openForm('raucaixanh')" class="xem_nhanh btn-circle btn_view btn ">
+							<i class="fa-solid fa-eye" onclick="openForm('formD')"></i>
+						</a>
+						<a class="btn btn_view action favorite-button">
+							<i class="fa-regular fa-heart"></i>
+						</a>
+					</div>
+					<div class="add-to-cart">Add to cart</div>
+				</div>
+			</div>
+			<div class="col-xl-3 col-lg-4 col-sm-6" title="thitlon">
+				<div class="product-box product-block-item">
+					<div class="product-thumbnail">
+						<a href="./thitlonnatvai.html" class="image_thumb product-transition" href="#">
+							<img class="product-image" src="../image/thitlon.png">
+						</a>
+						<span class="smart">
+							<span>-25%
+							</span>
+						</span>
+					</div>
+					<div class="product-info">
+						<div class="product-content">
+							<h3 class="product-name"><a href="#">Thịt lợn nạt vai</a></h3>
+							<div class="blockprice">
+								<span class="price-box">
+									105.000₫<span class="kg">/kg</span></span>
+									<span class="compare-price">140.000₫/kg</span>
+							</div>
+						</div>
+					</div>
+					<div class="product-action">
+						<a onclick="openForm('thitlon')" class="xem_nhanh btn-circle btn_view btn ">
+							<i class="fa-solid fa-eye"></i>
+						</a>
+						<a class="btn btn_view action favorite-button">
+							<i class="fa-regular fa-heart"></i>
+						</a>
+					</div>
+					<div class="add-to-cart">Add to cart</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="lienhe" class="footer">
+		<div class="container">
+		<div class="top-footer">
+			<div class="service">
+				<div class="left-service">
+					<div class="title-service"> Hỗ trợ 24/7</div>
+					<div class="sumary-service">Liên hệ chúng tôi 24h</div>
+				</div>
+				<div class="right-service">
+					<span><i class="fa-solid fa-headphones"></i></span>
+				</div>
+			</div>
+			<div class="service s2">
+				<div class="left-service">
+					<div class="title-service"> Thanh toán</div>
+					<div class="sumary-service">Bảo mật thanh toán</div>
+				</div>
+				<div class="right-service">
+					<span><i class="fa-solid fa-shop"></i></span>
+				</div>
+			</div>
+			<div class="service s3">
+				<div class="left-service">
+					<div class="title-service"> Giao hàng</div>
+					<div class="sumary-service">Giao hàng tận nhà</div>
+				</div>
+				<div class="right-service">
+					<span><i class="fa-solid fa-truck"></i></span>
+				</div>
+			</div>
+		</div>
+		<div class="bot-footer">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="top-logo">
+						<a href=""> <img src="./image/logo_header.png" alt=""></a>
+					</div>
+					<div class="mid-logo"><p>Cửa hàng <b>Thực phẩm sạch Q&T</b> là một website cũng cấp thực phẩm an toàn, nông sản sạch cho người dân.
+					</p>
+				</div>
+				<div class="bot-logo"></div>
+					<div class="content-logo">
+						<span class="left-logo">
+							<i class="fas fa-map-marker-alt"></i>
+						</span>
+						<span class="right-logo">
+							Trường Đại học Công nghệ Thông tin và Truyền thông Việt Hàn
+						</span>
+					</div>
+					<div class="phone-logo">
+						<span class="left-logo">
+							<i class="fa-brands fa-whatsapp"></i>
+						</span>
+						<span class="right-logo">
+							<a href="">1900 6750</a>
+						</span>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<div class="row">
+						<div class="chungtoi col-lg-6 col-md-6 col-xs-12">
+							<h5 class="title-menu">
+								Về chúng tôi
+							</h5>
+							<div class="content-menu row">
+								<div class="col-lg-6 col-md-12">
+									<ul class="list-menu">
+										<li class="li-menu"><a href="">Trang chủ</a></li>
+										<li class="li-menu"><a href="">Giới thiệu</a></li>
+										<li class="li-menu"><a href="">Sản phẩm</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-6 col-md-12">
+									<ul class="list-menu">
+										<li class="li-menu"><a href="">Bảo quản</a></li>
+										<li class="li-menu"><a href="">Tin tức</a></li>
+										<li class="li-menu"><a href="">Liên hệ</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="email ">
+								<div class="left-email">
+									<span><i class="fa-regular fa-envelope"></i></span>
+									
+								</div>
+								<div class="right-gmail">
+									<div class="title-gmail"> Đăng ký</div>
+									<div class="sumary-gmail">Nhận thông tin khuyến mãi</div>
+								</div>
+							</div>
+						</div>
+						<div class="khachhang col-lg-6 col-md-6 col-xs-12">
+							<h5 class="title-menu">
+								Hỗ trợ khách hàng
+							</h5>
+							<div class="content-menu row">
+								<div class="col-6">
+									<ul class="list-menu">
+										<li class="li-menu"><a href="">Bảo hành</a></li>
+										<li class="li-menu"><a href="">Vận chuyển</a></li>
+										<li class="li-menu"><a href="">Đổi trả</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="email-form">
+								<input class="input-form" type="text" placeholder="EMAIL">
+								<button class="bt-form"> Đăng ký</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="end">© Nguồn cung cấp Q&T Team</div>
+	</div>
+	<div id="back-top">
+		<a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+	</div>
+	
+</body>
+<script src="../script.js"></script>
+<script src="app.js"></script>
+
+</html>
